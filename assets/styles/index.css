@@ -5,6 +5,11 @@
   font-family: "Pontano Sans", sans-serif;
 }
 
+.activeIcon {
+  color: #bcac76;
+  transition: 300ms !important;
+}
+
 body .navbar {
   font-size: 15px;
   background-color: #e9ecef;
@@ -50,6 +55,10 @@ body .navbar .navbar__contact {
 body .navbar .navbar__contact .icons {
   display: flex;
   gap: 12px;
+}
+body .navbar .navbar__contact .icons i:hover {
+  color: #bcac76;
+  transition: 300ms !important;
 }
 body .navbar .navbar__contact img {
   width: 20px;

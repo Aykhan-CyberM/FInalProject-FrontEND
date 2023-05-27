@@ -4,6 +4,10 @@
     padding: 0 !important;
     font-family: 'Pontano Sans', sans-serif;
 }
+.activeIcon{
+    color: #bcac76
+    ;transition: 300ms !important;
+}
 
 body {
     .navbar {
@@ -49,6 +53,10 @@ body {
             .icons{
                 display: flex;
                 gap: 12px;
+                i:hover{
+                    color: #bcac76
+                    ;transition: 300ms !important;
+                }
             }
             font-size: 14px;
             display: flex;
