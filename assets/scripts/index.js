@@ -1,20 +1,12 @@
-const brandFacebook = document.querySelector(".brand_facebook")
-const brandTwitter = document.querySelector(".brand_twitter")
 const eng = document.querySelector("#eng")
 const usd = document.querySelector("#usd")
+const brandContainer = document.querySelector(".icons").querySelectorAll("i")
 const engSection = document.querySelector("#English")
 const usdSection = document.querySelector("#USD")
 const language = document.querySelector(".Language__Dropdown")
 const currency = document.querySelector(".usd__Dropdown")
-
 // brands hoverAndActive top navbar
-brandTwitter.addEventListener("click", () => {
-    makeActive(brandTwitter, "activeIcon", brandTwitter)
-})
 
-brandFacebook.addEventListener("click", () => {
-    makeActive(brandFacebook, "activeIcon", brandFacebook)
-})
 
 usdSection.addEventListener('click', () => {
     makeActive(usd, "Rotate", usdSection)
@@ -26,6 +18,9 @@ engSection.addEventListener('click', () => {
     displayElement(language)
 });
 
+brandContainer.forEach(btn=> btn.addEventListener('click',()=>{
+    makeActive(btn, "activeIcon", btn)
+}))
 
 
 // activeFunction
