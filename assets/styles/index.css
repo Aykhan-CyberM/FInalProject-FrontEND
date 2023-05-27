@@ -28,17 +28,27 @@ body .navbar .Language #English {
   border: none;
   border-right: solid rgba(33, 37, 41, 0.0862745098) 1px;
   padding-right: 0.7rem !important;
+  cursor: pointer;
+}
+body .navbar .Language #USD {
+  cursor: pointer;
 }
 body .navbar .Language div {
   display: flex;
+  align-items: center;
   gap: 3px;
 }
 body .navbar .Language div i {
   font-size: 12px;
   font-weight: 700;
   position: relative;
-  bottom: 6px;
   transform: rotate(180deg);
+  transition-duration: 300ms;
+}
+body .navbar .Language div .Rotate {
+  transform: rotate(360deg);
+  transition-property: transform;
+  transition-duration: 300ms;
 }
 body .navbar #nav_center {
   position: relative;
@@ -55,6 +65,7 @@ body .navbar .navbar__contact {
 body .navbar .navbar__contact .icons {
   display: flex;
   gap: 12px;
+  cursor: pointer;
 }
 body .navbar .navbar__contact .icons i:hover {
   color: #bcac76;
@@ -72,4 +83,25 @@ body .navbar .navbar__contact div #number {
   font-family: "Roboto Mono", monospace !important;
   transform: scaleX(0.9);
   font-size: 14px;
+}
+body .Language__Dropdown {
+  right: 125px;
+  background-color: white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: absolute;
+  width: -moz-max-content;
+  width: max-content;
+  color: #868e96;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 16px 83px 16px 25px !important;
+  visibility: hidden;
+}
+body .Language__Dropdown p:first-child {
+  padding-bottom: 10px !important;
+}
+body .usd__Dropdown {
+  right: 61px;
+  padding: 16px 100px 16px 25px !important;
+  text-transform: uppercase;
 }/*# sourceMappingURL=index.css.map */

@@ -4,9 +4,10 @@
     padding: 0 !important;
     font-family: 'Pontano Sans', sans-serif;
 }
-.activeIcon{
-    color: #bcac76
-    ;transition: 300ms !important;
+
+.activeIcon {
+    color: #bcac76;
+    transition: 300ms !important;
 }
 
 body {
@@ -28,18 +29,30 @@ body {
                 border: none;
                 border-right: solid #21252916 1px;
                 padding-right: 0.7rem !important;
+                cursor: pointer;
+            }
+
+            #USD {
+                cursor: pointer;
             }
 
             div {
                 display: flex;
+                align-items: center;
                 gap: 3px;
 
                 i {
                     font-size: 12px;
                     font-weight: 700;
                     position: relative;
-                    bottom: 6px;
                     transform: rotate(180deg);
+                    transition-duration: 300ms;
+                }
+
+                .Rotate {
+                    transform: rotate(360deg);
+                    transition-property: transform;
+                    transition-duration: 300ms;
                 }
             }
         }
@@ -50,14 +63,17 @@ body {
         }
 
         .navbar__contact {
-            .icons{
+            .icons {
                 display: flex;
                 gap: 12px;
-                i:hover{
-                    color: #bcac76
-                    ;transition: 300ms !important;
+                cursor: pointer;
+
+                i:hover {
+                    color: #bcac76;
+                    transition: 300ms !important;
                 }
             }
+
             font-size: 14px;
             display: flex;
             width: fit-content;
@@ -75,9 +91,33 @@ body {
                     transform: scaleX(0.9);
                     font-size: 14px;
                 }
+
                 padding-left: 0.3rem !important;
                 display: flex;
             }
         }
+    }
+
+    .Language__Dropdown {
+        right: 125px;
+        background-color: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        position: absolute;
+        width: max-content;
+        color: #868e96;
+        font-size: 15px;
+        font-weight: 600;
+        padding: 16px 83px 16px 25px !important;
+        visibility:hidden;
+
+        p:first-child {
+            padding-bottom: 10px !important;
+        }
+    }
+
+    .usd__Dropdown {
+        right: 61px;
+        padding: 16px 100px 16px 25px !important;
+        text-transform: uppercase;
     }
 }
