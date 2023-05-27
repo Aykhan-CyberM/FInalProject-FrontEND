@@ -23,6 +23,9 @@ body .navbar .Language {
   align-items: center;
   gap: 20px;
   margin-right: 20px !important;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 body .navbar .Language #English {
   border: none;
@@ -84,18 +87,29 @@ body .navbar .navbar__contact div #number {
   transform: scaleX(0.9);
   font-size: 14px;
 }
+body .Language__Dropdown p:hover {
+  color: black;
+  cursor: pointer;
+}
+body .Language__Dropdown p:active {
+  color: #bcac76;
+  cursor: pointer;
+}
 body .Language__Dropdown {
   right: 125px;
   background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   position: absolute;
-  width: -moz-max-content;
-  width: max-content;
   color: #868e96;
   font-size: 15px;
   font-weight: 600;
   padding: 16px 83px 16px 25px !important;
+  width: -moz-max-content;
+  width: max-content;
+  overflow: hidden;
   visibility: hidden;
+  top: 80px;
+  transition: 300ms all;
 }
 body .Language__Dropdown p:first-child {
   padding-bottom: 10px !important;
