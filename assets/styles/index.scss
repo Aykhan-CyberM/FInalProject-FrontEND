@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: 'Pontano Sans', sans-serif;
+}
+
+body {
+    .navbar {
+        font-size: 15px;
+        color: #343a40;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px !important;
+
+        .Language {
+            display: flex;
+            align-items: center;
+        }
+
+        #nav_center {
+            position: relative;
+            right: 63px;
+        }
+
+        .navbar__contact {
+            font-size: 14px;
+            display: flex;
+            width: fit-content;
+            align-items: center;
+            gap: 20px;
+
+            img {
+                width: 22px;
+                height: 22px;
+            }
+
+            div {
+                #number {
+                    font-family: 'Roboto Mono', monospace !important;
+                    padding: 0 !important;
+                    margin: 0 !important;
+                }
+
+                gap: 8px;
+                display: flex;
+            }
+        }
+    }
+}

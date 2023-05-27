@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: "Pontano Sans", sans-serif;
+}
+
+body .navbar {
+  font-size: 15px;
+  color: #343a40;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px !important;
+}
+body .navbar .Language {
+  display: flex;
+  align-items: center;
+}
+body .navbar #nav_center {
+  position: relative;
+  right: 63px;
+}
+body .navbar .navbar__contact {
+  font-size: 14px;
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  gap: 20px;
+}
+body .navbar .navbar__contact img {
+  width: 22px;
+  height: 22px;
+}
+body .navbar .navbar__contact div {
+  gap: 8px;
+  display: flex;
+}
+body .navbar .navbar__contact div #number {
+  font-family: "Roboto Mono", monospace !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}/*# sourceMappingURL=index.css.map */
