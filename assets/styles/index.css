@@ -135,39 +135,63 @@ body .usd__Dropdown {
   text-transform: uppercase;
 }
 body .main__navbar {
-  padding: 20px !important;
+  padding: 27px 47px !important;
   display: flex;
+  align-items: center;
+  gap: 25px;
+  color: #868e96;
+}
+body .main__navbar .DropAnimate2 {
+  opacity: 1 !important;
+  top: 135px !important;
+}
+body .main__navbar .DropAnimate2 p:first-child {
+  padding-bottom: 10px !important;
+  cursor: pointer;
 }
 body .main__navbar h1 {
-  font-size: 20px;
+  font-size: 17px;
   text-transform: capitalize;
+  cursor: pointer;
+  margin-bottom: 2px !important;
+  font-weight: 900;
+  color: black;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
-body .main__navbar #home div {
+body .main__navbar .main__sellections {
+  color: black;
+}
+body .main__navbar .main__sellections #home div {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   display: flex;
   align-items: center;
   gap: 3px;
 }
-body .main__navbar #home div i {
+body .main__navbar .main__sellections #home div #homeBtn {
+  font-weight: 900;
+}
+body .main__navbar .main__sellections #home div i {
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 900;
   position: relative;
   transform: rotate(180deg);
   transition-duration: 300ms;
 }
-body .main__navbar #home div .Rotate {
+body .main__navbar .main__sellections #home div .Rotate {
   transform: rotate(360deg);
   transition-property: transform;
   transition-duration: 300ms;
 }
-body .main__navbar #home div p {
+body .main__navbar .main__sellections #home div p {
   text-transform: capitalize;
+  cursor: pointer;
 }
-body .main__navbar .main__dropdowns .DropAnimate2 {
-  opacity: 1 !important;
-  top: 135px !important;
-}
-body .main__navbar .main__dropdowns .DropAnimate2 p:first-child {
-  padding-bottom: 10px !important;
+body .main__navbar .main__sellections #home div p:hover {
+  color: black;
   cursor: pointer;
 }
 body .main__navbar .main__dropdowns div {
@@ -183,6 +207,7 @@ body .main__navbar .main__dropdowns div {
   overflow: hidden;
   top: 180px;
   left: 120px;
+  opacity: 0;
   transition: all 200ms;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -194,6 +219,7 @@ body .main__navbar .main__dropdowns div p {
   text-transform: capitalize;
   font-size: 15px;
   font-weight: 900 !important;
+  cursor: pointer;
 }
 body .main__navbar .main__dropdowns div p span {
   color: #bcac76;
@@ -202,4 +228,7 @@ body .main__navbar .main__dropdowns div p span {
   font-size: 12px;
   padding: 2px 5px !important;
   margin-left: 5px !important;
+}
+body .main__navbar .main__dropdowns div p:hover {
+  color: black;
 }/*# sourceMappingURL=index.css.map */

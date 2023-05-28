@@ -154,50 +154,77 @@ body {
 
 
     .main__navbar {
-        padding: 20px !important;
+        padding: 27px 47px !important;
         display: flex;
+        align-items: center;
+        gap: 25px;
+        color: #868e96;
+
+        .DropAnimate2 {
+            opacity: 1 !important;
+            top: 135px !important;
+
+            p:first-child {
+                padding-bottom: 10px !important;
+                cursor: pointer;
+            }
+        }
 
         h1 {
-            font-size: 20px;
+            font-size: 17px;
             text-transform: capitalize;
+            cursor: pointer;
+            margin-bottom: 2px !important;
+            font-weight: 900;
+            color: black;
+            user-select: none;
         }
 
-        #home {
-            div {
-                display: flex;
-                align-items: center;
-                gap: 3px;
+        .main__sellections {
+            color: black;
 
-                i {
-                    font-size: 12px;
-                    font-weight: 700;
-                    position: relative;
-                    transform: rotate(180deg);
-                    transition-duration: 300ms;
-                }
+            #home {
+                div {
+                    user-select: none;
 
-                .Rotate {
-                    transform: rotate(360deg);
-                    transition-property: transform;
-                    transition-duration: 300ms;
-                }
+                    #homeBtn {
+                        font-weight: 900;
+                    }
 
-                p {
-                    text-transform: capitalize;
+                    display: flex;
+                    align-items: center;
+                    gap: 3px;
+
+                    i {
+                        font-size: 12px;
+                        font-weight: 900;
+                        position: relative;
+                        transform: rotate(180deg);
+                        transition-duration: 300ms;
+                    }
+
+                    .Rotate {
+                        transform: rotate(360deg);
+                        transition-property: transform;
+                        transition-duration: 300ms;
+                    }
+
+                    p {
+                        text-transform: capitalize;
+                        cursor: pointer;
+
+                    }
+
+                    p:hover {
+                        color: black;
+                        cursor: pointer;
+                    }
                 }
             }
         }
+
 
         .main__dropdowns {
-            .DropAnimate2 {
-                opacity: 1 !important;
-                top: 135px !important;
-        
-                p:first-child {
-                    padding-bottom: 10px !important;
-                    cursor: pointer;
-                }
-            }
             div {
                 right: 125px;
                 background-color: white;
@@ -210,16 +237,19 @@ body {
                 overflow: hidden;
                 top: 180px;
                 left: 120px;
-                // opacity: 0;
+                opacity: 0;
                 transition: all 200ms;
                 user-select: none;
                 padding: 6px !important;
+
                 p {
                     padding: 8px 25px 5px 15px !important;
                     text-transform: capitalize;
                     font-size: 15px;
                     font-weight: 900 !important;
-                    span{
+                    cursor: pointer;
+
+                    span {
                         color: #bcac76;
                         background-color: #f7f5ef;
                         border-radius: 5px !important;
@@ -227,6 +257,10 @@ body {
                         padding: 2px 5px !important;
                         margin-left: 5px !important;
                     }
+                }
+
+                p:hover {
+                    color: black;
                 }
             }
 

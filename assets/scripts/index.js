@@ -8,21 +8,22 @@ const currency = document.querySelector(".usd__Dropdown")
 const show = document.querySelector(".show")
 const topAnimation = document.querySelector(".showAnimation")
 const topNavDropdownSellections = document.querySelector(".sellections").querySelectorAll("p");
+const mainNavDropdownSellections = document.querySelector(".main__dropdowns").querySelectorAll("p");
 const homebtn = document.querySelector('#home')
 const homeDropdown = document.querySelector('.home__Dropdown')
 const homeArrow = document.querySelector('#homeArrow')
 
 // brands hoverAndActive top navbar
 homebtn.addEventListener('click',()=>{
-    makeAcrtiveDropdowns(homeArrow,"Rotate",homebtn,homeDropdown,"DropAnimate2")
+    makeAcrtiveDropdowns(homeArrow,"Rotate",homebtn,homeDropdown,"DropAnimate2",mainNavDropdownSellections)
 })
 
 usdSection.addEventListener('click', () => {
-    makeAcrtiveDropdowns(usd, "Rotate", usdSection, currency,"DropAnimate")
+    makeAcrtiveDropdowns(usd, "Rotate", usdSection, currency,"DropAnimate",topNavDropdownSellections)
 })
 
 engSection.addEventListener('click', () => {
-    makeAcrtiveDropdowns(eng, "Rotate", engSection, language,"DropAnimate");
+    makeAcrtiveDropdowns(eng, "Rotate", engSection, language,"DropAnimate",topNavDropdownSellections);
 });
 
 brandContainer.forEach(btn => btn.addEventListener('click', () => {
@@ -45,7 +46,7 @@ function makeActive(Element, active) {
     })
 }
 
-function makeAcrtiveDropdowns(Element, active, container, show,Animation) {
+function makeAcrtiveDropdowns(Element, active, container, show,Animation,sellections) {
     if (Element.classList.contains(active) && show.style.visibility == "visible") {
         Element.classList.remove(active);
         show.classList.remove(Animation);
@@ -62,7 +63,7 @@ function makeAcrtiveDropdowns(Element, active, container, show,Animation) {
             show.classList.remove(Animation);
         }
     })
-    topNavDropdownSellections.forEach((links) => links.addEventListener('click', () => {
+    sellections.forEach((links) => links.addEventListener('click', () => {
         show.classList.remove(Animation);
         show.style.pointerEvents = "none";
         Element.classList.remove(active);
