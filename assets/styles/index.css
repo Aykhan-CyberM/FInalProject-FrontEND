@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0 !important;
   padding: 0 !important;
-  font-family: "Pontano Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .activeIcon {
@@ -117,10 +117,6 @@ body .Language__Dropdown {
      -moz-user-select: none;
           user-select: none;
 }
-body .Language__Dropdown p:first-child {
-  padding-bottom: 10px !important;
-  cursor: default;
-}
 body .DropAnimate {
   opacity: 1 !important;
   top: 55px !important;
@@ -138,7 +134,7 @@ body .main__navbar {
   padding: 27px 47px !important;
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 22px;
   color: #868e96;
 }
 body .main__navbar .DropAnimate2 {
@@ -150,58 +146,71 @@ body .main__navbar .DropAnimate2 p:first-child {
   cursor: pointer;
 }
 body .main__navbar h1 {
-  font-size: 17px;
+  font-size: 15px;
   text-transform: capitalize;
   cursor: pointer;
-  margin-bottom: 2px !important;
-  font-weight: 900;
+  margin-top: 1px !important;
+  font-weight: 500;
   color: black;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
 }
 body .main__navbar .main__sellections {
-  color: black;
+  color: rgba(0, 0, 0, 0.518);
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-weight: 600;
 }
-body .main__navbar .main__sellections #home div {
+body .main__navbar .main__sellections div div {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  cursor: pointer;
   display: flex;
   align-items: center;
   gap: 3px;
+  font-size: 15px;
 }
-body .main__navbar .main__sellections #home div #homeBtn {
-  font-weight: 900;
+body .main__navbar .main__sellections div div #homeBtn {
+  color: black;
 }
-body .main__navbar .main__sellections #home div i {
+body .main__navbar .main__sellections div div #homeArrow {
+  color: black;
+}
+body .main__navbar .main__sellections div div i {
   font-size: 12px;
   font-weight: 900;
   position: relative;
   transform: rotate(180deg);
   transition-duration: 300ms;
 }
-body .main__navbar .main__sellections #home div .Rotate {
+body .main__navbar .main__sellections div div .Rotate {
   transform: rotate(360deg);
   transition-property: transform;
   transition-duration: 300ms;
 }
-body .main__navbar .main__sellections #home div p {
+body .main__navbar .main__sellections div div p {
   text-transform: capitalize;
   cursor: pointer;
 }
-body .main__navbar .main__sellections #home div p:hover {
+body .main__navbar .main__sellections div div p:hover i {
   color: black;
   cursor: pointer;
 }
-body .main__navbar .main__dropdowns div {
+body .main__navbar .main__sellections div p:hover {
+  color: black;
+  cursor: pointer;
+}
+body .main__dropdowns div {
   right: 125px;
   background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   position: absolute;
   color: #868e96;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 400;
   width: -moz-max-content;
   width: max-content;
   overflow: hidden;
@@ -214,14 +223,14 @@ body .main__navbar .main__dropdowns div {
           user-select: none;
   padding: 6px !important;
 }
-body .main__navbar .main__dropdowns div p {
+body .main__dropdowns div p {
   padding: 8px 25px 5px 15px !important;
   text-transform: capitalize;
-  font-size: 15px;
-  font-weight: 900 !important;
+  font-size: 13px;
+  font-weight: 600 !important;
   cursor: pointer;
 }
-body .main__navbar .main__dropdowns div p span {
+body .main__dropdowns div p span {
   color: #bcac76;
   background-color: #f7f5ef;
   border-radius: 5px !important;
@@ -229,6 +238,6 @@ body .main__navbar .main__dropdowns div p span {
   padding: 2px 5px !important;
   margin-left: 5px !important;
 }
-body .main__navbar .main__dropdowns div p:hover {
+body .main__dropdowns div p:hover {
   color: black;
 }/*# sourceMappingURL=index.css.map */

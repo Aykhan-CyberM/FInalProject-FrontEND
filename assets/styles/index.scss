@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0 !important;
     padding: 0 !important;
-    font-family: 'Pontano Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -128,11 +128,6 @@ body {
         opacity: 0;
         transition: all 200ms;
         user-select: none;
-
-        p:first-child {
-            padding-bottom: 10px !important;
-            cursor: default;
-        }
     }
 
     .DropAnimate {
@@ -157,7 +152,7 @@ body {
         padding: 27px 47px !important;
         display: flex;
         align-items: center;
-        gap: 25px;
+        gap: 22px;
         color: #868e96;
 
         .DropAnimate2 {
@@ -171,29 +166,39 @@ body {
         }
 
         h1 {
-            font-size: 17px;
+            font-size: 15px;
             text-transform: capitalize;
             cursor: pointer;
-            margin-bottom: 2px !important;
-            font-weight: 900;
+            margin-top: 1px !important;
+            font-weight: 500;
             color: black;
             user-select: none;
         }
 
         .main__sellections {
-            color: black;
+            color: rgba(0, 0, 0, 0.518);
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            font-weight: 600;
 
-            #home {
+            div {
                 div {
                     user-select: none;
+                    cursor: pointer;
 
                     #homeBtn {
-                        font-weight: 900;
+                        color: black;
+                    }
+
+                    #homeArrow {
+                        color: black;
                     }
 
                     display: flex;
                     align-items: center;
                     gap: 3px;
+                    font-size: 15px;
 
                     i {
                         font-size: 12px;
@@ -212,59 +217,62 @@ body {
                     p {
                         text-transform: capitalize;
                         cursor: pointer;
-
                     }
 
-                    p:hover {
+                    p:hover i {
                         color: black;
                         cursor: pointer;
-                    }
-                }
-            }
-        }
-
-
-        .main__dropdowns {
-            div {
-                right: 125px;
-                background-color: white;
-                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-                position: absolute;
-                color: #868e96;
-                font-size: 15px;
-                font-weight: 600;
-                width: max-content;
-                overflow: hidden;
-                top: 180px;
-                left: 120px;
-                opacity: 0;
-                transition: all 200ms;
-                user-select: none;
-                padding: 6px !important;
-
-                p {
-                    padding: 8px 25px 5px 15px !important;
-                    text-transform: capitalize;
-                    font-size: 15px;
-                    font-weight: 900 !important;
-                    cursor: pointer;
-
-                    span {
-                        color: #bcac76;
-                        background-color: #f7f5ef;
-                        border-radius: 5px !important;
-                        font-size: 12px;
-                        padding: 2px 5px !important;
-                        margin-left: 5px !important;
                     }
                 }
 
                 p:hover {
                     color: black;
+                    cursor: pointer;
                 }
             }
-
         }
     }
 
+
+    .main__dropdowns {
+        div {
+            right: 125px;
+            background-color: white;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            position: absolute;
+            color: #868e96;
+            font-size: 15px;
+            font-weight: 400;
+            width: max-content;
+            overflow: hidden;
+            top: 180px;
+            left: 120px;
+            opacity: 0;
+            transition: all 200ms;
+            user-select: none;
+            padding: 6px !important;
+
+            p {
+                padding: 8px 25px 5px 15px !important;
+                text-transform: capitalize;
+                font-size: 13px;
+                font-weight: 600 !important;
+                cursor: pointer;
+
+                span {
+                    color: #bcac76;
+                    background-color: #f7f5ef;
+                    border-radius: 5px !important;
+                    font-size: 12px;
+                    padding: 2px 5px !important;
+                    margin-left: 5px !important;
+                }
+            }
+
+            p:hover {
+                color: black;
+            }
+        }
+
+    }
 }
