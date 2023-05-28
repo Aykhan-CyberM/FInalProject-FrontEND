@@ -114,6 +114,10 @@ body .Language__Dropdown {
 body .Language__Dropdown p:first-child {
   padding-bottom: 10px !important;
 }
+body .DropAnimate {
+  opacity: 1 !important;
+  top: 55px !important;
+}
 body .usd__Dropdown {
   right: 61px;
   padding: 16px 100px 16px 25px !important;

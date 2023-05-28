@@ -24,7 +24,7 @@ body {
             align-items: center;
             gap: 20px;
             margin-right: 20px !important;
-            user-select:none;
+            user-select: none;
 
             #English {
                 border: none;
@@ -98,14 +98,17 @@ body {
             }
         }
     }
+
     .Language__Dropdown p:hover {
         color: black;
         cursor: pointer;
     }
+
     .Language__Dropdown p:active {
         color: #bcac76;
         cursor: pointer;
     }
+
     .Language__Dropdown {
         right: 125px;
         background-color: white;
@@ -119,11 +122,16 @@ body {
         overflow: hidden;
         top: 80px;
         opacity: 0;
-        transition: all 200ms ;
+        transition: all 200ms;
         p:first-child {
             padding-bottom: 10px !important;
         }
     }
+    .DropAnimate {
+        opacity: 1 !important;
+        top: 55px !important
+    }
+
     .usd__Dropdown {
         right: 61px;
         padding: 16px 100px 16px 25px !important;

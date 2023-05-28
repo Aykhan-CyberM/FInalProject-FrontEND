@@ -5,7 +5,7 @@ const engSection = document.querySelector("#English")
 const usdSection = document.querySelector("#USD")
 const language = document.querySelector(".Language__Dropdown")
 const currency = document.querySelector(".usd__Dropdown")
-const show =  document.querySelector(".show")
+const show = document.querySelector(".show")
 const topAnimation = document.querySelector(".showAnimation")
 
 const topNavDropdownSellections = document.querySelector(".sellections").querySelectorAll("p");
@@ -13,14 +13,14 @@ const topNavDropdownSellections = document.querySelector(".sellections").querySe
 
 // brands hoverAndActive top navbar
 usdSection.addEventListener('click', () => {
-    makeAcrtiveDropdowns(usd, "Rotate", usdSection,currency)
+    makeAcrtiveDropdowns(usd, "Rotate", usdSection, currency)
 })
 
 engSection.addEventListener('click', () => {
-    makeAcrtiveDropdowns(eng, "Rotate", engSection,language);
+    makeAcrtiveDropdowns(eng, "Rotate", engSection, language);
 });
 
-brandContainer.forEach(btn=> btn.addEventListener('click',()=>{
+brandContainer.forEach(btn => btn.addEventListener('click', () => {
     makeActive(btn, "activeIcon")
 }))
 
@@ -28,39 +28,41 @@ brandContainer.forEach(btn=> btn.addEventListener('click',()=>{
 // activeFunction
 
 function makeActive(Element, active) {
-    if (Element.classList.contains(active) ){
+    if (Element.classList.contains(active)) {
         Element.classList.remove(active);
     } else {
         Element.classList.add(active);
     }
     document.addEventListener('click', (event) => {
-        if (!Element.contains(event.target)){
+        if (!Element.contains(event.target)) {
             Element.classList.remove(active)
         }
     })
 }
 
-
-function makeAcrtiveDropdowns(Element, active, container,show) {
+function makeAcrtiveDropdowns(Element
+    , active, container, show) {
     if (Element.classList.contains(active) && show.style.visibility == "visible") {
         Element.classList.remove(active);
-        show.style.opacity = "0"
-        show.style.top= "80px"
+        show.classList.remove("DropAnimate");
     } else {
         Element.classList.add(active);
         show.style.visibility = "visible";
-        show.style.opacity = "1";
-        show.style.top= "55px"
+        show.classList.add("DropAnimate");
+        show.style.pointerEvents = "";
     }
     document.addEventListener('click', (event) => {
         if (!container.contains(event.target) && !show.contains(event.target)) {
             Element.classList.remove(active)
-            show.style.opacity = "0";
-            show.style.top = "80px"
+            show.classList.remove("DropAnimate");
+            show.style.pointerEvents = "none";
         }
     })
     topNavDropdownSellections.forEach((links) => links.addEventListener('click', () => {
-        show.style.opacity = "0";
+        show.classList.remove("DropAnimate");
+        show.style.pointerEvents = "none";
+        Element.classList.remove(active);
+        console.log('afds')
     }));
 }
 
