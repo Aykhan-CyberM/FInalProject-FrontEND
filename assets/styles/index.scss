@@ -117,17 +117,17 @@ body {
         padding: 16px 83px 16px 25px !important;
         width: max-content;
         overflow: hidden;
-        visibility: hidden;
         top: 80px;
-        transition: 300ms all;
+        opacity: 0;
+        transition: all 200ms ;
         p:first-child {
             padding-bottom: 10px !important;
         }
     }
-
     .usd__Dropdown {
         right: 61px;
         padding: 16px 100px 16px 25px !important;
         text-transform: uppercase;
     }
+
 }

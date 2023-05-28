@@ -107,9 +107,9 @@ body .Language__Dropdown {
   width: -moz-max-content;
   width: max-content;
   overflow: hidden;
-  visibility: hidden;
   top: 80px;
-  transition: 300ms all;
+  opacity: 0;
+  transition: all 200ms;
 }
 body .Language__Dropdown p:first-child {
   padding-bottom: 10px !important;

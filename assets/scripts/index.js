@@ -9,25 +9,15 @@ const show =  document.querySelector(".show")
 const topAnimation = document.querySelector(".showAnimation")
 
 const topNavDropdownSellections = document.querySelector(".sellections").querySelectorAll("p");
-topNavDropdownSellections.forEach((links) => links.addEventListener('click', () => {
-    links.classList.add(show)
-}));
+
 
 // brands hoverAndActive top navbar
 usdSection.addEventListener('click', () => {
     makeAcrtiveDropdowns(usd, "Rotate", usdSection,currency)
-    makeActive(currency, "topAnimation")
 })
 
 engSection.addEventListener('click', () => {
     makeAcrtiveDropdowns(eng, "Rotate", engSection,language);
-    if (language.style.top != "55px" ){ 
-        language.style.top = "55px"
-        language.style.opacity = "1"
-    } else {
-        language.style.top = "80px"
-        language.style.opacity = "0"
-    }
 });
 
 brandContainer.forEach(btn=> btn.addEventListener('click',()=>{
@@ -37,10 +27,6 @@ brandContainer.forEach(btn=> btn.addEventListener('click',()=>{
 
 // activeFunction
 
-function AddAnimation(){
-
-}
- 
 function makeActive(Element, active) {
     if (Element.classList.contains(active) ){
         Element.classList.remove(active);
@@ -58,16 +44,23 @@ function makeActive(Element, active) {
 function makeAcrtiveDropdowns(Element, active, container,show) {
     if (Element.classList.contains(active) && show.style.visibility == "visible") {
         Element.classList.remove(active);
-        show.style.visibility = "hidden"
+        show.style.opacity = "0"
+        show.style.top= "80px"
     } else {
         Element.classList.add(active);
         show.style.visibility = "visible";
+        show.style.opacity = "1";
+        show.style.top= "55px"
     }
     document.addEventListener('click', (event) => {
         if (!container.contains(event.target) && !show.contains(event.target)) {
             Element.classList.remove(active)
-            show.style.visibility = "hidden";
+            show.style.opacity = "0";
+            show.style.top = "80px"
         }
     })
+    topNavDropdownSellections.forEach((links) => links.addEventListener('click', () => {
+        show.style.opacity = "0";
+    }));
 }
 
