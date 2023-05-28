@@ -40,8 +40,7 @@ function makeActive(Element, active) {
     })
 }
 
-function makeAcrtiveDropdowns(Element
-    , active, container, show) {
+function makeAcrtiveDropdowns(Element, active, container, show) {
     if (Element.classList.contains(active) && show.style.visibility == "visible") {
         Element.classList.remove(active);
         show.classList.remove("DropAnimate");
@@ -54,15 +53,14 @@ function makeAcrtiveDropdowns(Element
     document.addEventListener('click', (event) => {
         if (!container.contains(event.target) && !show.contains(event.target)) {
             Element.classList.remove(active)
-            show.classList.remove("DropAnimate");
             show.style.pointerEvents = "none";
+            show.classList.remove("DropAnimate");
         }
     })
     topNavDropdownSellections.forEach((links) => links.addEventListener('click', () => {
         show.classList.remove("DropAnimate");
         show.style.pointerEvents = "none";
         Element.classList.remove(active);
-        console.log('afds')
     }));
 }
 

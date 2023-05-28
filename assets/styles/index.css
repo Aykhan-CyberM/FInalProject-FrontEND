@@ -56,6 +56,9 @@ body .navbar .Language div .Rotate {
 body .navbar #nav_center {
   position: relative;
   right: 37px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 body .navbar .navbar__contact {
   font-size: 14px;
@@ -110,13 +113,21 @@ body .Language__Dropdown {
   top: 80px;
   opacity: 0;
   transition: all 200ms;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 body .Language__Dropdown p:first-child {
   padding-bottom: 10px !important;
+  cursor: default;
 }
 body .DropAnimate {
   opacity: 1 !important;
   top: 55px !important;
+}
+body .DropAnimate p:first-child {
+  padding-bottom: 10px !important;
+  cursor: pointer;
 }
 body .usd__Dropdown {
   right: 61px;

@@ -61,6 +61,8 @@ body {
         #nav_center {
             position: relative;
             right: 37px;
+        user-select: none;
+
         }
 
         .navbar__contact {
@@ -123,13 +125,19 @@ body {
         top: 80px;
         opacity: 0;
         transition: all 200ms;
+        user-select: none;
         p:first-child {
             padding-bottom: 10px !important;
+            cursor: default;
         }
     }
     .DropAnimate {
         opacity: 1 !important;
-        top: 55px !important
+        top: 55px !important;
+        p:first-child {
+            padding-bottom: 10px !important;
+            cursor: pointer;
+        }
     }
 
     .usd__Dropdown {
