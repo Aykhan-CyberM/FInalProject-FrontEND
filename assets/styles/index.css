@@ -194,13 +194,45 @@ body .main__navbar .main__navbar-navigations div:hover p, body .main__navbar .ma
   color: black;
   cursor: pointer;
 }
+body .main__dropdowns a {
+  text-decoration: none !important;
+  color: currentColor;
+  cursor: default;
+}
 body .main__dropdowns .home__dropdown {
   display: flex;
   flex-direction: column;
   gap: 2px;
+  padding: 6px !important;
+  right: 125px;
+}
+body .main__dropdowns .shop__dropdown {
+  left: 140px !important;
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+}
+body .main__dropdowns .shop__dropdown h1 {
+  color: black;
+  font-size: 14px;
+  padding: 8px !important;
+  font-weight: 600;
+}
+body .main__dropdowns .shop__dropdown div {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0px 50px 20px !important;
+}
+body .main__dropdowns .shop__dropdown div a {
+  padding: 8px !important;
+}
+body .main__dropdowns .shop__dropdown img {
+  width: 290px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-left: 30px !important;
 }
 body .main__dropdowns .dropdown {
-  right: 125px;
   background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   position: absolute;
@@ -216,16 +248,15 @@ body .main__dropdowns .dropdown {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
-  padding: 6px !important;
 }
-body .main__dropdowns .dropdown p {
+body .main__dropdowns .dropdown a {
   padding: 8px 25px 5px 15px !important;
   text-transform: capitalize;
   font-size: 13px;
   font-weight: 500 !important;
   transform: scaleY(1.05);
 }
-body .main__dropdowns .dropdown p span {
+body .main__dropdowns .dropdown a span {
   color: #bcac76;
   background-color: #f7f5ef;
   border-radius: 5px !important;
@@ -240,7 +271,7 @@ body .show {
   transition-duration: 300ms;
   z-index: 1;
 }
-body .show p:hover {
+body .show a:hover {
   color: black !important;
   cursor: pointer;
 }/*# sourceMappingURL=index.css.map */

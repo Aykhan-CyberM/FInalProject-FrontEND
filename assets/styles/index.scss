@@ -217,14 +217,45 @@ body {
 
     }
     .main__dropdowns {
+        a{
+            text-decoration: none !important;
+            color: currentColor;
+            cursor: default;
+        }
         .home__dropdown{
             display: flex;
             flex-direction: column;
             gap: 2px;
+            padding: 6px !important;
+            right: 125px;
           
         }
+        .shop__dropdown{
+            left: 140px !important;
+            display: flex;
+            width: max-content;
+            h1{
+                color: black;
+                font-size: 14px;
+                padding: 8px !important;
+                font-weight: 600;
+            }
+            div{
+                display: flex;
+                flex-direction: column;
+                padding: 50px 0px 50px 20px !important;
+                a{
+                    padding: 8px !important;
+                }
+            }
+            img{
+                width: 290px;
+                object-fit: cover;
+                padding-left: 30px !important;
+
+            }
+        }
         .dropdown{
-            right: 125px;
             background-color: white;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             position: absolute;
@@ -237,9 +268,8 @@ body {
             opacity: 0;
             transition: all 200ms;
             user-select: none;
-            padding: 6px !important;
         
-            p {
+            a {
                 padding: 8px 25px 5px 15px !important;
                 text-transform: capitalize;
                 font-size: 13px;
@@ -263,7 +293,7 @@ body {
         top: 135px !important;
         transition-duration: 300ms;
         z-index: 1;
-        p:hover{
+        a:hover{
             color: black !important;
             cursor: pointer;
         }
