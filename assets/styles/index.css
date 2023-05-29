@@ -10,7 +10,7 @@
   transition: 300ms !important;
 }
 
-body .navbar {
+body .top__navbar {
   font-size: 15px;
   background-color: #e9ecef;
   display: flex;
@@ -18,7 +18,7 @@ body .navbar {
   align-items: center;
   padding: 16px 43px !important;
 }
-body .navbar .Language {
+body .top__navbar .top__navbar-sellections {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -27,40 +27,40 @@ body .navbar .Language {
      -moz-user-select: none;
           user-select: none;
 }
-body .navbar .Language #English {
+body .top__navbar .top__navbar-sellections #top__navbar-languageConatiner {
   border: none;
   border-right: solid rgba(33, 37, 41, 0.0862745098) 1px;
   padding-right: 0.7rem !important;
   cursor: pointer;
 }
-body .navbar .Language #USD {
+body .top__navbar .top__navbar-sellections #top__navbar-curencyConatiner {
   cursor: pointer;
 }
-body .navbar .Language div {
+body .top__navbar .top__navbar-sellections div {
   display: flex;
   align-items: center;
   gap: 3px;
 }
-body .navbar .Language div i {
+body .top__navbar .top__navbar-sellections div i {
   font-size: 12px;
   font-weight: 700;
   position: relative;
   transform: rotate(180deg);
   transition-duration: 300ms;
 }
-body .navbar .Language div .Rotate {
+body .top__navbar .top__navbar-sellections div .Rotate {
   transform: rotate(360deg);
   transition-property: transform;
   transition-duration: 300ms;
 }
-body .navbar #nav_center {
+body .top__navbar #nav_center {
   position: relative;
   right: 37px;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
 }
-body .navbar .navbar__contact {
+body .top__navbar .navbar__contact {
   font-size: 14px;
   display: flex;
   width: -moz-fit-content;
@@ -68,27 +68,28 @@ body .navbar .navbar__contact {
   align-items: center;
   gap: 20px;
 }
-body .navbar .navbar__contact .icons {
+body .top__navbar .navbar__contact .top__navbar-socialMedia {
   display: flex;
   gap: 12px;
   cursor: pointer;
 }
-body .navbar .navbar__contact .icons i:hover {
+body .top__navbar .navbar__contact .top__navbar-socialMedia i:hover {
   color: #bcac76;
   transition: 300ms !important;
 }
-body .navbar .navbar__contact img {
+body .top__navbar .navbar__contact img {
   width: 20px;
   height: 20px;
 }
-body .navbar .navbar__contact div {
-  padding-left: 0.3rem !important;
+body .top__navbar .navbar__contact div {
   display: flex;
+  gap: 5px;
 }
-body .navbar .navbar__contact div #number {
+body .top__navbar .navbar__contact div #number {
   font-family: "Roboto Mono", monospace !important;
   transform: scaleX(0.9);
-  font-size: 14px;
+  transform: scaleY(1.1);
+  font-size: 15px;
 }
 body .Language__Dropdown p:hover {
   color: black;
@@ -121,123 +122,8 @@ body .DropAnimate {
   opacity: 1 !important;
   top: 55px !important;
 }
-body .DropAnimate p:first-child {
-  padding-bottom: 10px !important;
-  cursor: pointer;
-}
 body .usd__Dropdown {
   right: 61px;
   padding: 16px 100px 16px 25px !important;
   text-transform: uppercase;
-}
-body .main__navbar {
-  padding: 27px 47px !important;
-  display: flex;
-  align-items: center;
-  gap: 22px;
-  color: #868e96;
-}
-body .main__navbar .DropAnimate2 {
-  opacity: 1 !important;
-  top: 135px !important;
-}
-body .main__navbar .DropAnimate2 p:first-child {
-  padding-bottom: 10px !important;
-  cursor: pointer;
-}
-body .main__navbar h1 {
-  font-size: 15px;
-  text-transform: capitalize;
-  cursor: pointer;
-  margin-top: 1px !important;
-  font-weight: 500;
-  color: black;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-}
-body .main__navbar .main__sellections {
-  color: rgba(0, 0, 0, 0.518);
-  display: flex;
-  gap: 15px;
-  align-items: center;
-  font-weight: 600;
-}
-body .main__navbar .main__sellections div div {
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 3px;
-  font-size: 15px;
-}
-body .main__navbar .main__sellections div div #homeBtn {
-  color: black;
-}
-body .main__navbar .main__sellections div div #homeArrow {
-  color: black;
-}
-body .main__navbar .main__sellections div div i {
-  font-size: 12px;
-  font-weight: 900;
-  position: relative;
-  transform: rotate(180deg);
-  transition-duration: 300ms;
-}
-body .main__navbar .main__sellections div div .Rotate {
-  transform: rotate(360deg);
-  transition-property: transform;
-  transition-duration: 300ms;
-}
-body .main__navbar .main__sellections div div p {
-  text-transform: capitalize;
-  cursor: pointer;
-}
-body .main__navbar .main__sellections div div p:hover i {
-  color: black;
-  cursor: pointer;
-}
-body .main__navbar .main__sellections div p:hover {
-  color: black;
-  cursor: pointer;
-}
-body .main__dropdowns div {
-  right: 125px;
-  background-color: white;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  position: absolute;
-  color: #868e96;
-  font-size: 15px;
-  font-weight: 400;
-  width: -moz-max-content;
-  width: max-content;
-  overflow: hidden;
-  top: 180px;
-  left: 120px;
-  opacity: 0;
-  transition: all 200ms;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
-  padding: 6px !important;
-}
-body .main__dropdowns div p {
-  padding: 8px 25px 5px 15px !important;
-  text-transform: capitalize;
-  font-size: 13px;
-  font-weight: 600 !important;
-  cursor: pointer;
-}
-body .main__dropdowns div p span {
-  color: #bcac76;
-  background-color: #f7f5ef;
-  border-radius: 5px !important;
-  font-size: 12px;
-  padding: 2px 5px !important;
-  margin-left: 5px !important;
-}
-body .main__dropdowns div p:hover {
-  color: black;
 }/*# sourceMappingURL=index.css.map */

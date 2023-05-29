@@ -1,4 +1,4 @@
- const eng = document.querySelector("#eng")
+const eng = document.querySelector("#eng")
 const usd = document.querySelector("#usd")
 const brandContainer = document.querySelector(".icons").querySelectorAll("i")
 const engSection = document.querySelector("#English")
@@ -93,4 +93,3 @@ function makeAcrtiveDropdowns(Element, active, container, show,Animation,sellect
         Element.classList.remove(active);
     }));
 }
-
