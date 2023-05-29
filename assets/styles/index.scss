@@ -115,18 +115,13 @@ body {
         a{
             padding: 5px  10px!important;
         }
-        .Language__Dropdown p:hover {
+        a:hover {
             color: black;
-            cursor: pointer;
+            cursor: pointer !important;
         }
-
-        .Language__Dropdown p:active {
-            color: #bcac76;
-            cursor: pointer;
+        a:active {
+            color: #bcac76 !important;
         }
-
-        .Language__Dropdown p {}
-
         .dropdown {
             right: 125px;
             background-color: white;

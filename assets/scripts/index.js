@@ -26,13 +26,8 @@ const topAnimation = document.querySelector(".showAnimation")
 
 // brands hoverAndActive top navbar
 
-usdSection.addEventListener('click', () => {
-    makeAcrtiveDropdowns(usdArrow, "Rotate", usdSection, currency,"DropAnimate")
-})
 
-engSection.addEventListener('click', () => {
-    makeAcrtiveDropdowns(engArrow, "Rotate", engSection, language,"DropAnimate");
-});
+
 // docsbtn.addEventListener('click',()=>{
 //     makeAcrtiveDropdowns(docsArrow,"Rotate",docsbtn,docsDropdown,"DropAnimate2",mainNavDropdownSellections)
 // })
@@ -53,6 +48,14 @@ brandContainer.forEach(btn => btn.addEventListener('click', () => {
     makeActive(btn, "activeIcon")
 }))
 
+engSection.addEventListener('click', () => {
+    makeAcrtiveDropdowns(engArrow, engSection, language);
+});
+
+usdSection.addEventListener('click', () => {
+    makeAcrtiveDropdowns(usdArrow, usdSection, currency)
+})
+
 
 // activeFunction
 
@@ -69,26 +72,27 @@ function makeActive(Element, active) {
     })
 }
 
-function makeAcrtiveDropdowns(Element, active, container, show,Animation) {
-    if (Element.classList.contains(active) && show.style.visibility == "visible") {
-        Element.classList.remove(active);
-        show.classList.remove(Animation);
+
+
+function makeAcrtiveDropdowns(Element, container, show) {
+    if (Element.classList.contains("Rotate") && show.style.visibility == "visible") {
+        Element.classList.remove("Rotate");
+        show.classList.remove("DropAnimate");
+        show.style.pointerEvents = "none";
+
     } else {
-        Element.classList.add(active);
+        Element.classList.add("Rotate");
         show.style.visibility = "visible";
-        show.classList.add(Animation);
+        show.classList.add("DropAnimate");
         show.style.pointerEvents = "";
+        show.style.cursor = "default"
     }
     document.addEventListener('click', (event) => {
-        if (!container.contains(event.target) && !show.contains(event.target)) {
-            Element.classList.remove(active)
+        if (!container.contains(event.target)) {
+            Element.classList.remove("Rotate")
+            show.style.cursor = "default"
             show.style.pointerEvents = "none";
-            show.classList.remove(Animation);
+            show.classList.remove("DropAnimate");
         }
     })
-    sellections.forEach((links) => links.addEventListener('click', () => {
-        show.classList.remove(Animation);
-        show.style.pointerEvents = "none";
-        Element.classList.remove(active);
-    }));
 }

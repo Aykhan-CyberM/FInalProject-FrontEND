@@ -102,13 +102,12 @@ body .sellections div {
 body .sellections a {
   padding: 5px 10px !important;
 }
-body .sellections .Language__Dropdown p:hover {
+body .sellections a:hover {
   color: black;
-  cursor: pointer;
+  cursor: pointer !important;
 }
-body .sellections .Language__Dropdown p:active {
-  color: #bcac76;
-  cursor: pointer;
+body .sellections a:active {
+  color: #bcac76 !important;
 }
 body .sellections .dropdown {
   right: 125px;
