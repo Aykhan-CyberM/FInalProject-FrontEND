@@ -136,4 +136,36 @@ body .sellections .usd__Dropdown {
   right: 61px;
   padding: 10px 90px 10px 16px !important;
   text-transform: uppercase;
+}
+body .dropdown2 {
+  position: relative;
+  display: inline-block;
+}
+body .dropdown2-btn {
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+body .dropdown2-content {
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s, transform 0.3s;
+  pointer-events: none;
+}
+body .dropdown2-content a {
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+body .dropdown2.active .dropdown2-content {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }/*# sourceMappingURL=index.css.map */

@@ -72,6 +72,18 @@ function makeActive(Element, active) {
     })
 }
 
+const dropdown2 = document.querySelector('.dropdown2');
+dropdown2.addEventListener('click', () => {
+    toggleDropdown(dropdown2)
+})
+function toggleDropdown(dropdown) {
+    dropdown.classList.toggle('active');
+}
+document.addEventListener('click', function (event) {
+    if (!dropdown.contains(event.target)) {
+        dropdown.classList.remove('active');
+    }
+});
 
 
 function makeAcrtiveDropdowns(Element, container, show) {
