@@ -6,43 +6,7 @@ const usdSection = document.querySelector("#top__navbar-curencyConatiner")
 const language = document.querySelector(".Language__Dropdown")
 const currency = document.querySelector(".usd__Dropdown")
 const topAnimation = document.querySelector(".showAnimation")
-// const topNavDropdownSellections = document.querySelector(".sellections").querySelectorAll("p");
-// const mainNavDropdownSellections = document.querySelector(".main__dropdowns").querySelectorAll("p");
-// const homebtn = document.querySelector('#home')
-// const homeDropdown = document.querySelector('.home__Dropdown')
-// const homeArrow = document.querySelector('#homeArrow')
-// const shopbtn = document.querySelector('#shop')
-// const shopDropdown = document.querySelector('.shop__Dropdown')
-// const shopArrow = document.querySelector('#shopArrow')
-// const iconsbtn = document.querySelector('#icons')
-// const iconsDropdown = document.querySelector('.icons__Dropdown')
-// const iconsArrow = document.querySelector('#iconsArrow')
-// const pagesbtn = document.querySelector('#pages')
-// const pagesDropdown = document.querySelector('.pages__Dropdown')
-// const pagesArrow = document.querySelector('#pagesArrow')
-// const docsbtn = document.querySelector('#docs')
-// const docsDropdown = document.querySelector('.docs__Dropdown')
-// const docsArrow = document.querySelector('#docsArrow')
 
-// brands hoverAndActive top navbar
-
-
-
-// docsbtn.addEventListener('click',()=>{
-//     makeAcrtiveDropdowns(docsArrow,"Rotate",docsbtn,docsDropdown,"DropAnimate2",mainNavDropdownSellections)
-// })
-// pagesbtn.addEventListener('click',()=>{
-//     makeAcrtiveDropdowns(pagesArrow,"Rotate",pagesbtn,pagesDropdown,"DropAnimate2",mainNavDropdownSellections)
-// })
-// iconsbtn.addEventListener('click',()=>{
-//     makeAcrtiveDropdowns(iconsArrow,"Rotate",iconsbtn,iconsDropdown,"DropAnimate2",mainNavDropdownSellections)
-// })
-// homebtn.addEventListener('click',()=>{
-//     makeAcrtiveDropdowns(homeArrow,"Rotate",homebtn,homeDropdown,"DropAnimate2",mainNavDropdownSellections)
-// })
-// shopbtn.addEventListener('click',()=>{
-//     makeAcrtiveDropdowns(shopArrow,"Rotate",shopbtn,shopDropdown,"DropAnimate2",mainNavDropdownSellections)
-// })
 
 brandContainer.forEach(btn => btn.addEventListener('click', () => {
     makeActive(btn, "activeIcon")
@@ -59,6 +23,59 @@ usdSection.addEventListener('click', () => {
 
 // activeFunction
 
+const homeBtn = document.querySelector('#homeBtn');
+const homeDropdown = document.querySelector('.home__dropdown');
+const homeArrow = document.querySelector('#homeArrow');
+
+homeBtn.addEventListener('click', () => {
+    toggleDropdown(homeBtn, homeDropdown, homeArrow)
+})
+
+
+const shopBtn = document.querySelector('#shopBtn');
+const shopDropdown = document.querySelector('.shop__dropdown');
+const shopArrow = document.querySelector('#shopArrow');
+
+shopBtn.addEventListener('click', () => {
+    toggleDropdown(shopBtn, shopDropdown, shopArrow)
+})
+
+
+const iconsBtn = document.querySelector('#iconsBtn');
+const iconsDropdown = document.querySelector('.icons__dropdown');
+const iconsArrow = document.querySelector('#iconsArrow');
+iconsBtn.addEventListener('click', () => {
+    toggleDropdown(iconsBtn, iconsDropdown, iconsArrow)
+})
+
+
+const pagesBtn = document.querySelector('#pagesBtn');
+const pagesDropdown = document.querySelector('.pages__dropdown');
+const pagesArrow = document.querySelector('#pagesArrow');
+pagesBtn.addEventListener('click', () => {
+    toggleDropdown(pagesBtn, pagesDropdown, pagesArrow)
+})
+
+
+const docsBtn = document.querySelector('#docsBtn');
+const docsDropdown = document.querySelector('.docs__dropdown');
+const docsArrow = document.querySelector('#docsArrow');
+docsBtn.addEventListener('click', () => {
+    toggleDropdown(docsBtn, docsDropdown, docsArrow)
+})
+
+
+function toggleDropdown(btn,dropdown , arrow) {
+    dropdown.classList.toggle('show');
+    arrow.classList.toggle('Rotate')
+    document.addEventListener('click', function (event) {
+        if (!btn.contains(event.target)) {
+            dropdown.classList.remove('show');
+            arrow.classList.remove('Rotate')
+        }
+    })
+}
+
 function makeActive(Element, active) {
     if (Element.classList.contains(active)) {
         Element.classList.remove(active);
@@ -71,20 +88,6 @@ function makeActive(Element, active) {
         }
     })
 }
-
-const dropdown2 = document.querySelector('.dropdown2');
-dropdown2.addEventListener('click', () => {
-    toggleDropdown(dropdown2)
-})
-function toggleDropdown(dropdown) {
-    dropdown.classList.toggle('active');
-}
-document.addEventListener('click', function (event) {
-    if (!dropdown.contains(event.target)) {
-        dropdown.classList.remove('active');
-    }
-});
-
 
 function makeAcrtiveDropdowns(Element, container, show) {
     if (Element.classList.contains("Rotate") && show.style.visibility == "visible") {
