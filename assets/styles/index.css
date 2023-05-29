@@ -190,9 +190,40 @@ body .main__navbar .main__navbar-navigations .navigation p {
   text-transform: capitalize;
   cursor: pointer;
 }
-body .main__navbar .main__navbar-navigations div:hover p, body .main__navbar .main__navbar-navigations div:hover i {
+body .main__navbar .main__navbar-navigations div:hover p,
+body .main__navbar .main__navbar-navigations div:hover i {
   color: black;
   cursor: pointer;
+}
+body .main__dropdowns .icons__dropdown {
+  left: 250px !important;
+}
+body .main__dropdowns .icons__dropdown #icon__bottom {
+  color: rgba(0, 0, 0, 0.716);
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  background-color: #bcac76 !important;
+  padding: 15px !important;
+  margin-top: 30px !important;
+}
+body .main__dropdowns .icons__dropdown .icons__gridClass {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+}
+body .main__dropdowns .icons__dropdown .icons__gridClass .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 23px !important;
+  color: rgba(0, 0, 0, 0.869);
+  font-weight: 700;
+}
+body .main__dropdowns .icons__dropdown .icons__gridClass .item img {
+  margin-bottom: 20px !important;
+  width: 50px;
+  margin: 10px 12px !important;
 }
 body .main__dropdowns a {
   text-decoration: none !important;
@@ -205,6 +236,20 @@ body .main__dropdowns .home__dropdown {
   gap: 2px;
   padding: 6px !important;
   right: 125px;
+}
+body .main__dropdowns .docs__dropdown {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 5px !important;
+  left: 400px !important;
+  color: rgba(33, 37, 41, 0.0862745098);
+}
+body .main__dropdowns .docs__dropdown a {
+  padding: 25px 0px !important;
+}
+body .main__dropdowns .docs__dropdown #Bootstrap {
+  border-top: 1px solid rgba(134, 142, 150, 0.1647058824);
+  margin-top: 10px !important;
 }
 body .main__dropdowns .shop__dropdown {
   left: 140px !important;
