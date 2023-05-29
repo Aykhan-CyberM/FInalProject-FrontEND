@@ -195,6 +195,44 @@ body .main__navbar .main__navbar-navigations div:hover i {
   color: black;
   cursor: pointer;
 }
+body .main__dropdowns .pages__dropdown {
+  display: flex;
+  gap: 30px;
+  padding: 60px !important;
+  transform: translate(-50%, -50%);
+  top: 75% !important;
+  left: 50% !important;
+  z-index: -1;
+}
+body .main__dropdowns .pages__dropdown img {
+  width: 250px;
+  height: 160px;
+}
+body .main__dropdowns .pages__dropdown h1 {
+  color: black;
+  font-size: 14px;
+  padding: 20px 15px 8px 15px !important;
+  font-weight: 600;
+}
+body .main__dropdowns .pages__dropdown .HomePage {
+  display: flex;
+  flex-direction: column;
+}
+body .main__dropdowns .pages__dropdown .HomePage a {
+  padding: 8px 0 5px 15px !important;
+}
+body .main__dropdowns .pages__dropdown .otherProcess {
+  display: flex;
+  flex-direction: column;
+}
+body .main__dropdowns .pages__dropdown .blog {
+  display: flex;
+  flex-direction: column;
+}
+body .main__dropdowns .pages__dropdown .cutomer {
+  display: flex;
+  flex-direction: column;
+}
 body .main__dropdowns .icons__dropdown {
   left: 250px !important;
 }

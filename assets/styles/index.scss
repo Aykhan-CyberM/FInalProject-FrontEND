@@ -224,6 +224,54 @@ body {
     }
 
     .main__dropdowns {
+
+        .pages__dropdown {
+            display: flex;
+            gap: 30px;
+            padding: 60px !important;
+            transform: translate(-50%, -50%);
+            top: calc(80% - 5%) !important;
+            left: 50% !important;
+            z-index: -1
+            ;
+
+            img {
+                width: 250px;
+                height: 160px;
+            }
+
+            h1 {
+                color: black;
+                font-size: 14px;
+                padding: 20px 15px 8px 15px !important;
+                font-weight: 600;
+            }
+
+            .HomePage {
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    padding: 8px 0 5px 15px !important;
+                }
+            }
+
+            .otherProcess {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .blog {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .cutomer {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
         .icons__dropdown {
             left: 250px !important;
 
@@ -253,7 +301,7 @@ body {
                     img {
                         margin-bottom: 20px !important;
                         width: 50px;
-                        margin: 10px  12px!important;
+                        margin: 10px 12px !important;
                     }
                 }
             }
@@ -273,21 +321,25 @@ body {
             right: 125px;
 
         }
-        .docs__dropdown{
+
+        .docs__dropdown {
             display: flex;
             flex-direction: column;
             padding: 10px 5px !important;
             left: 400px !important;
             color: #21252916;
-            a{
+
+            a {
                 padding: 25px 0px !important;
             }
-            #Bootstrap{
+
+            #Bootstrap {
                 border-top: 1px solid #868e962a;
                 margin-top: 10px !important;
             }
 
         }
+
         .shop__dropdown {
             left: 140px !important;
             display: flex;
