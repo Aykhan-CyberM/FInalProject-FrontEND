@@ -27,6 +27,7 @@ body {
             gap: 20px;
             margin-right: 20px !important;
             user-select: none;
+            font-size: 14px;
 
             #top__navbar-languageConatiner {
                 border: none;
@@ -38,7 +39,7 @@ body {
             #top__navbar-curencyConatiner {
                 cursor: pointer;
             }
-            
+
             div {
                 display: flex;
                 align-items: center;
@@ -61,10 +62,11 @@ body {
         }
 
         #nav_center {
+            transform: scaleX(0.9);
             position: relative;
             right: 37px;
             user-select: none;
-
+            font-size: 14px;
         }
 
         .navbar__contact {
@@ -72,6 +74,7 @@ body {
                 display: flex;
                 gap: 12px;
                 cursor: pointer;
+                margin-left: 5px !important;
 
                 i:hover {
                     color: #bcac76;
@@ -95,7 +98,7 @@ body {
                     font-family: 'Roboto Mono', monospace !important;
                     transform: scaleX(0.9);
                     transform: scaleY(1.1);
-                    font-size: 15px;
+                    font-size: 13px;
                 }
 
                 display: flex;
@@ -104,44 +107,53 @@ body {
         }
     }
 
-    .Language__Dropdown p:hover {
-        color: black;
-        cursor: pointer;
-    }
+    .sellections {
+        div{
+            display: flex;
+            flex-direction: column;
+        }
+        a{
+            padding: 5px  10px!important;
+        }
+        .Language__Dropdown p:hover {
+            color: black;
+            cursor: pointer;
+        }
 
-    .Language__Dropdown p:active {
-        color: #bcac76;
-        cursor: pointer;
-    }
-    .Language__Dropdown p{
-        
-    }
-    .Language__Dropdown {
-        right: 125px;
-        background-color: white;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-        position: absolute;
-        color: #868e96;
-        font-size: 15px;
-        font-weight: 600;
-        padding: 16px 83px 16px 25px !important;
-        width: max-content;
-        overflow: hidden;
-        top: 80px;
-        opacity: 0;
-        transition: all 200ms;
-        user-select: none;
-    }
+        .Language__Dropdown p:active {
+            color: #bcac76;
+            cursor: pointer;
+        }
 
-    .DropAnimate {
-        opacity: 1 !important;
-        top: 55px !important;
-    }
+        .Language__Dropdown p {}
 
-    .usd__Dropdown {
-        right: 61px;
-        padding: 16px 100px 16px 25px !important;
-        text-transform: uppercase;
+        .dropdown {
+            right: 125px;
+            background-color: white;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            position: absolute;
+            color: #868e96;
+            font-size: 14px;
+            font-weight: 600;
+            padding: 12px 70px 12px 12px !important;
+            width: max-content;
+            overflow: hidden;
+            top: 80px;
+            opacity: 0;
+            transition: all 200ms;
+            user-select: none;
+        }
+
+        .DropAnimate {
+            opacity: 1 !important;
+            top: 55px !important;
+        }
+
+        .usd__Dropdown {
+            right: 61px;
+            padding: 10px 90px 10px 16px !important;
+            text-transform: uppercase;
+        }
     }
 
 

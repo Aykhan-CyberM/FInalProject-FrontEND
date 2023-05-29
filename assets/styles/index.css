@@ -26,6 +26,7 @@ body .top__navbar .top__navbar-sellections {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  font-size: 14px;
 }
 body .top__navbar .top__navbar-sellections #top__navbar-languageConatiner {
   border: none;
@@ -54,11 +55,13 @@ body .top__navbar .top__navbar-sellections div .Rotate {
   transition-duration: 300ms;
 }
 body .top__navbar #nav_center {
+  transform: scaleX(0.9);
   position: relative;
   right: 37px;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  font-size: 14px;
 }
 body .top__navbar .navbar__contact {
   font-size: 14px;
@@ -72,6 +75,7 @@ body .top__navbar .navbar__contact .top__navbar-socialMedia {
   display: flex;
   gap: 12px;
   cursor: pointer;
+  margin-left: 5px !important;
 }
 body .top__navbar .navbar__contact .top__navbar-socialMedia i:hover {
   color: #bcac76;
@@ -89,25 +93,32 @@ body .top__navbar .navbar__contact div #number {
   font-family: "Roboto Mono", monospace !important;
   transform: scaleX(0.9);
   transform: scaleY(1.1);
-  font-size: 15px;
+  font-size: 13px;
 }
-body .Language__Dropdown p:hover {
+body .sellections div {
+  display: flex;
+  flex-direction: column;
+}
+body .sellections a {
+  padding: 5px 10px !important;
+}
+body .sellections .Language__Dropdown p:hover {
   color: black;
   cursor: pointer;
 }
-body .Language__Dropdown p:active {
+body .sellections .Language__Dropdown p:active {
   color: #bcac76;
   cursor: pointer;
 }
-body .Language__Dropdown {
+body .sellections .dropdown {
   right: 125px;
   background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   position: absolute;
   color: #868e96;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 600;
-  padding: 16px 83px 16px 25px !important;
+  padding: 12px 70px 12px 12px !important;
   width: -moz-max-content;
   width: max-content;
   overflow: hidden;
@@ -118,12 +129,12 @@ body .Language__Dropdown {
      -moz-user-select: none;
           user-select: none;
 }
-body .DropAnimate {
+body .sellections .DropAnimate {
   opacity: 1 !important;
   top: 55px !important;
 }
-body .usd__Dropdown {
+body .sellections .usd__Dropdown {
   right: 61px;
-  padding: 16px 100px 16px 25px !important;
+  padding: 10px 90px 10px 16px !important;
   text-transform: uppercase;
 }/*# sourceMappingURL=index.css.map */
