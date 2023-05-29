@@ -102,10 +102,6 @@ body .sellections div {
 body .sellections a {
   padding: 5px 10px !important;
 }
-body .sellections a:hover {
-  color: black;
-  cursor: pointer !important;
-}
 body .sellections a:active {
   color: #bcac76 !important;
 }
@@ -131,6 +127,11 @@ body .sellections .dropdown {
 body .sellections .DropAnimate {
   opacity: 1 !important;
   top: 55px !important;
+  z-index: 1;
+}
+body .sellections .DropAnimate a:hover {
+  cursor: pointer;
+  color: black;
 }
 body .sellections .usd__Dropdown {
   right: 61px;
@@ -223,27 +224,23 @@ body .main__dropdowns .dropdown p {
   font-size: 13px;
   font-weight: 500 !important;
   transform: scaleY(1.05);
-  cursor: pointer;
 }
 body .main__dropdowns .dropdown p span {
   color: #bcac76;
   background-color: #f7f5ef;
   border-radius: 5px !important;
-  font-size: 12px;
+  font-size: 10px;
   padding: 2px 5px !important;
   margin-left: 5px !important;
-}
-body .main__dropdowns .dropdown p:hover {
-  color: black;
+  font-weight: 700;
 }
 body .show {
   opacity: 1 !important;
   top: 135px !important;
   transition-duration: 300ms;
+  z-index: 1;
 }
-body .show div {
-  opacity: 1 !important;
-}
-body .home__dropdown {
-  opacity: 0;
+body .show p:hover {
+  color: black !important;
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */

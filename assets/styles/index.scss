@@ -112,16 +112,9 @@ body {
             display: flex;
             flex-direction: column;
         }
-
         a {
             padding: 5px 10px !important;
         }
-
-        a:hover {
-            color: black;
-            cursor: pointer !important;
-        }
-
         a:active {
             color: #bcac76 !important;
         }
@@ -142,12 +135,19 @@ body {
             transition: all 200ms;
             user-select: none;
         }
-
+        
+        
         .DropAnimate {
             opacity: 1 !important;
             top: 55px !important;
+            z-index: 1;
+            a:hover{
+                cursor: pointer;
+                color: black;
+            }
         }
-
+        
+       
         .usd__Dropdown {
             right: 61px;
             padding: 10px 90px 10px 16px !important;
@@ -216,14 +216,12 @@ body {
         }
 
     }
-
-
-
     .main__dropdowns {
         .home__dropdown{
             display: flex;
             flex-direction: column;
             gap: 2px;
+          
         }
         .dropdown{
             right: 125px;
@@ -240,26 +238,22 @@ body {
             transition: all 200ms;
             user-select: none;
             padding: 6px !important;
+        
             p {
                 padding: 8px 25px 5px 15px !important;
                 text-transform: capitalize;
                 font-size: 13px;
                 font-weight: 500 !important;
                 transform: scaleY(1.05) ;
-                cursor: pointer;
-
                 span {
                     color: #bcac76;
                     background-color: #f7f5ef;
                     border-radius: 5px !important;
-                    font-size: 12px;
+                    font-size: 10px;
                     padding: 2px 5px !important;
                     margin-left: 5px !important;
+                    font-weight: 700;
                 }
-            }
-
-            p:hover {
-                color: black;
             }
         }
 
@@ -268,11 +262,10 @@ body {
         opacity: 1 !important;
         top: 135px !important;
         transition-duration: 300ms;
-        div{
-            opacity: 1 !important;
+        z-index: 1;
+        p:hover{
+            color: black !important;
+            cursor: pointer;
         }
-    }
-    .home__dropdown{
-        opacity: 0;
     }
 }
