@@ -543,4 +543,115 @@ body .slick-dots li button {
 }
 body .slick-dots li.slick-active button {
   background-color: #bcac76;
+}
+body .head {
+  margin: 100px 70px !important;
+}
+body .head h1 {
+  color: #868e96;
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-weight: 600;
+}
+body .head h2 {
+  padding: 10px 0 !important;
+  font-weight: 700;
+  font-size: 30px;
+}
+body .head p {
+  color: #868e96;
+  font-size: 20px;
+}
+body .section1 {
+  padding: 0 40px !important;
+}
+body .section1 .products__gridcontaier {
+  display: flex;
+  flex-direction: column;
+}
+body .section1 .products__gridcontaier .productline {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+body .section1 .products__gridcontaier .productline .product:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: 300ms;
+}
+body .section1 .products__gridcontaier .productline .product {
+  z-index: 2;
+  padding-bottom: 100px !important;
+}
+body .section1 .products__gridcontaier .productline .product img {
+  width: 200px;
+}
+body .section1 .products__gridcontaier .productline .product h1 {
+  font-size: 32px;
+  font-weight: 600;
+  width: 50px;
+  color: rgba(0, 0, 0, 0.777);
+}
+body .section1 .products__gridcontaier .productline .product p {
+  color: #868e96;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 20px 0 !important;
+}
+body .section1 .products__gridcontaier .productline .product a {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-weight: 600;
+  outline: none;
+  text-decoration: none;
+  color: currentColor !important;
+  padding: 20px 0 !important;
+}
+body .section1 .products__gridcontaier .productline .product a:visited {
+  color: currentColor !important;
+}
+body .section1 .products__gridcontaier .productline #book img {
+  width: 320px;
+  height: 320px;
+}
+body .section1 .products__gridcontaier .productline #chair {
+  display: flex;
+}
+body .section1 .products__gridcontaier .productline #chair #chairText {
+  position: relative;
+  left: 10px;
+  margin-top: 100px !important;
+}
+body .section1 .products__gridcontaier .productline #chair img {
+  z-index: -1;
+  width: 539px;
+  height: 539px;
+}
+body .section1 .products__gridcontaier .productline #clock {
+  display: flex;
+}
+body .section1 .products__gridcontaier .productline #clock img {
+  z-index: -1;
+  width: 480px;
+  height: 480px;
+  margin-left: 20px !important;
+}
+body .section1 .products__gridcontaier .productline #clock .aboutText {
+  position: relative;
+  top: 90px;
+}
+body .section1 .products__gridcontaier .productline #box img {
+  width: 300px;
+}
+body .section1 .products__gridcontaier .productline #chair3 {
+  display: flex;
+}
+body .section1 .products__gridcontaier .productline #chair3 img {
+  width: 500px;
+  z-index: -1;
+}
+body .section1 .products__gridcontaier .productline #chair3 .aboutText {
+  position: relative;
+  top: 100px;
 }/*# sourceMappingURL=index.css.map */

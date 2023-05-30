@@ -466,7 +466,6 @@ body {
             }
         }
 
-        p {}
 
         .dropdown {
             z-index: -3;
@@ -527,37 +526,45 @@ body {
         margin: 0 auto;
         height: 500px !important;
     }
+
     .slide-content {
         height: 500px !important;
         display: flex;
         padding: 20px;
         width: 100%;
-        justify-content:  center;
+        justify-content: center;
         justify-content: space-around;
-        .right{
-            img{
+
+        .right {
+            img {
                 width: 330px;
             }
-            .item{
-                position: absolute !important; 
+
+            .item {
+                position: absolute !important;
             }
-            .itemBeing{
+
+            .itemBeing {
                 width: 440px;
                 bottom: 20px !important;
             }
-            .item2{
+
+            .item2 {
                 bottom: 20px !important;
                 left: 20px !important;
                 z-index: -1;
             }
         }
+
         .left {
             margin: 117px 0px !important;
             width: 553px;
-            p{
+
+            p {
                 color: #868e96;
                 margin-top: 20px !important;
             }
+
             h2 {
                 font-size: 16px;
                 text-transform: uppercase;
@@ -584,12 +591,13 @@ body {
                 font-weight: 600;
                 padding: 10px 15px !important;
             }
-            button:hover{
+
+            button:hover {
                 color: black !important;
                 background-color: #bcac76;
                 transition: 300ms;
             }
-        
+
         }
     }
 
@@ -627,8 +635,147 @@ body {
         cursor: pointer;
         transition: background-color 0.3
     }
+
     .slick-dots li.slick-active button {
         background-color: #bcac76;
-      }
-      
-}   
+    }
+
+    .head {
+        margin: 100px 70px !important;
+
+        h1 {
+            color: #868e96;
+            font-size: 18px;
+            letter-spacing: 4px;
+            font-weight: 600;
+        }
+
+        h2 {
+            padding: 10px 0 !important;
+            font-weight: 700;
+            font-size: 30px;
+        }
+
+        p {
+            color: #868e96;
+            font-size: 20px;
+        }
+    }
+
+    .section1 {
+        padding: 0 40px !important;
+
+        .products__gridcontaier {
+            display: flex;
+            flex-direction: column;
+
+            .productline {
+                display: flex;
+                justify-content: center;
+                justify-content: space-around;
+                .product:hover{
+                    transform: scale(1.1);
+                    cursor: pointer;
+                    transition: 300ms;
+                }
+                .product {
+                    z-index: 2;
+                    padding-bottom: 100px !important;
+                    img {
+                        width: 200px;
+                    }
+
+                    h1 {
+                        font-size: 32px;
+                        font-weight: 600;
+                        width: 50px;
+                        color: rgba(0, 0, 0, 0.777);
+                    }
+
+                    p {
+                        color: #868e96;
+                        font-weight: 600;
+                        font-size: 16px;
+                        padding: 20px 0 !important;
+                    }
+
+                    a {
+                        font-size: 12px;
+                        letter-spacing: 3px;
+                        text-transform: uppercase;
+                        font-weight: 600;
+                        outline: none;
+                        text-decoration: none;
+                        color: currentColor !important;
+                        padding: 20px 0 !important;
+                    }
+
+                    a:visited {
+                        color: currentColor !important;
+                    }
+                }
+
+                #book {
+                    img {
+                        width: 320px;
+                        height: 320px;
+                    }
+
+                }
+
+                #chair {
+                    display: flex;
+
+                    #chairText {
+                        position: relative;
+                        left: 10px;
+                        margin-top: 100px !important;
+                    }
+
+                    img {
+                        z-index: -1;
+                        width: 539px;
+                        height: 539px;
+                    }
+                }
+
+                #clock {
+                    display: flex;
+
+                    img {
+                        z-index: -1;
+                        width: 480px;
+                        height: 480px;
+                        margin-left: 20px !important;
+                    }
+
+                    .aboutText {
+                        position: relative;
+                        top: 90px;
+                    }
+                }
+                #box{
+                    img{
+                        width: 300px;
+                    }
+                }
+                #chair3{
+                    display: flex;
+                    img{
+                        width: 500px;
+                        z-index: -1;
+                    }
+                    .aboutText{
+                        position: relative;
+                        top:100px;
+                    }
+                }
+
+
+            }
+        }
+
+
+
+    }
+}
