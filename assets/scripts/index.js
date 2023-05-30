@@ -106,22 +106,19 @@ function makeAcrtiveDropdowns(Element, container, show) {
     })
 }
 
-$(document).ready(function () {
-    var slickOptions = {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1000000, // Set autoplay speed to 5 seconds
-        infinite: true,
-        speed: 500,
-        easing: 'ease',
-        dots: true,
-        dotsClass: 'slick-dots custom-dots', // Custom class for dots
-        prevArrow: '', // Remove previous arrow
-        nextArrow: '', // Remove next arrow
-    };
-
-    $('.single-item').slick(slickOptions);
-});
-
+$(document).ready(function() {
+    $('.slider').slick({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 100000,
+      fade: false,
+      prevArrow: false,
+      nextArrow: false
+    });
+  });
+  
 

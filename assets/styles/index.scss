@@ -159,6 +159,7 @@ body {
     }
 
     .main__navbar {
+
         transform: scaleY(1.05);
         padding: 27px 47px !important;
         display: flex;
@@ -465,7 +466,10 @@ body {
             }
         }
 
+        p {}
+
         .dropdown {
+            z-index: -3;
             background-color: white;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             position: absolute;
@@ -504,7 +508,7 @@ body {
         opacity: 1 !important;
         top: 135px !important;
         transition-duration: 300ms;
-        z-index: 1;
+        z-index: 4 !important;
 
         a:hover {
             color: black !important;
@@ -514,94 +518,112 @@ body {
 
     #backgroundSlider {
         position: absolute;
+        z-index: -2;
         top: 0;
-        z-index: -1;
-        user-select: none;
     }
 
-    .single-item {
+    .slider {
         width: 100%;
-        height: 600px;
-        top: 0px;
-
-        .item {
-            position: absolute;
-            z-index: 1;
-            width: 340px;
-        }
-
-        .itemBeing {
-            position: absolute;
-            top: -136px;
-            margin-left: 72px;
-            width: 400px;
-            height: 700px;
-            transform: rotate(325deg);
-
-        }
-
-        .Sider1 {
-            height: 500px;
-            width: 700px !important;
-            display: flex;
-            justify-content: space-around;
-            .left {
-                margin: 117px 0px !important;
-                width: 553px;
-                h2 {
-                    font-size: 16px;
-                    text-transform: uppercase;
-                    word-spacing: 3px;
-                    letter-spacing: 5px;
-                    font-weight: 400;
-                }
-
-                h1 {
-                    font-size: 67px;
-                    padding-top: 20px !important;
-                    line-height: 70px;
-                }
-                button{
-                    margin-top: 48px !important;
-                    border: 1px solid #bcac76;
-                    background-color: transparent;
-                    color: #bcac76;
-                    font-size: 13px;
-                    text-transform: uppercase;
-                    word-spacing: 3px;
-                    letter-spacing: 4px;
-                    font-weight: 600;
-                    padding: 10px  15px!important;
-                }
+        margin: 0 auto;
+        height: 500px !important;
+    }
+    .slide-content {
+        height: 500px !important;
+        display: flex;
+        padding: 20px;
+        width: 100%;
+        justify-content:  center;
+        justify-content: space-around;
+        .right{
+            img{
+                width: 330px;
+            }
+            .item{
+                position: absolute !important; 
+            }
+            .itemBeing{
+                width: 440px;
+                bottom: 20px !important;
+            }
+            .item2{
+                bottom: 20px !important;
+                left: 20px !important;
+                z-index: -1;
             }
         }
-    }
+        .left {
+            margin: 117px 0px !important;
+            width: 553px;
+            p{
+                color: #868e96;
+                margin-top: 20px !important;
+            }
+            h2 {
+                font-size: 16px;
+                text-transform: uppercase;
+                word-spacing: 3px;
+                letter-spacing: 5px;
+                font-weight: 400;
+            }
 
-    .custom-dots {
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        user-select: none;
-
-        li {
-            display: inline-block;
-            margin: 0 5px;
+            h1 {
+                font-size: 67px;
+                padding-top: 20px !important;
+                line-height: 70px;
+            }
 
             button {
-                width: 10px;
-                height: 10px;
-                border-radius: 50%;
-                background-color: #bbb;
-                border: none;
-                cursor: pointer;
-
-                &.slick-active {
-                    background-color: #555;
-                }
+                margin-top: 48px !important;
+                border: 1px solid #bcac76;
+                background-color: transparent;
+                color: #bcac76;
+                font-size: 13px;
+                text-transform: uppercase;
+                word-spacing: 3px;
+                letter-spacing: 4px;
+                font-weight: 600;
+                padding: 10px 15px !important;
             }
+        
         }
     }
 
+    /* Optional styling */
+    h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+
+    }
+
+    .slick-dots {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        position: relative;
+        bottom: 20px !important;
+    }
+
+    .slick-dots li {
+        margin: 0 5px !important;
+        display: inline-block;
+    }
+
+    .slick-dots li button {
+        color: transparent !important;
+        font-size: 12px;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        border: none;
+        background-color: #bbb;
+        cursor: pointer;
+        transition: background-color 0.3
+    }
+    .slick-dots li.slick-active button {
+        background-color: #bcac76;
+      }
 
 }

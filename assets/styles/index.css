@@ -10,6 +10,9 @@
   transition: 300ms !important;
 }
 
+body {
+  /* Optional styling */
+}
 body .top__navbar {
   font-size: 15px;
   background-color: #e9ecef;
@@ -397,6 +400,7 @@ body .main__dropdowns .shop__dropdown img {
   padding-left: 30px !important;
 }
 body .main__dropdowns .dropdown {
+  z-index: -3;
   background-color: white;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   position: absolute;
@@ -433,7 +437,7 @@ body .show {
   opacity: 1 !important;
   top: 135px !important;
   transition-duration: 300ms;
-  z-index: 1;
+  z-index: 4 !important;
 }
 body .show a:hover {
   color: black !important;
@@ -441,53 +445,58 @@ body .show a:hover {
 }
 body #backgroundSlider {
   position: absolute;
+  z-index: -2;
   top: 0;
-  z-index: -1;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
 }
-body .single-item {
+body .slider {
   width: 100%;
-  height: 600px;
-  top: 0px;
+  margin: 0 auto;
+  height: 500px !important;
 }
-body .single-item .item {
-  position: absolute;
-  z-index: 1;
-  width: 340px;
-}
-body .single-item .itemBeing {
-  position: absolute;
-  top: -136px;
-  margin-left: 72px;
-  width: 400px;
-  height: 700px;
-  transform: rotate(325deg);
-}
-body .single-item .Sider1 {
-  height: 500px;
-  width: 700px !important;
+body .slide-content {
+  height: 500px !important;
   display: flex;
+  padding: 20px;
+  width: 100%;
+  justify-content: center;
   justify-content: space-around;
 }
-body .single-item .Sider1 .left {
+body .slide-content .right img {
+  width: 330px;
+}
+body .slide-content .right .item {
+  position: absolute !important;
+}
+body .slide-content .right .itemBeing {
+  width: 440px;
+  bottom: 20px !important;
+}
+body .slide-content .right .item2 {
+  bottom: 20px !important;
+  left: 20px !important;
+  z-index: -1;
+}
+body .slide-content .left {
   margin: 117px 0px !important;
   width: 553px;
 }
-body .single-item .Sider1 .left h2 {
+body .slide-content .left p {
+  color: #868e96;
+  margin-top: 20px !important;
+}
+body .slide-content .left h2 {
   font-size: 16px;
   text-transform: uppercase;
   word-spacing: 3px;
   letter-spacing: 5px;
   font-weight: 400;
 }
-body .single-item .Sider1 .left h1 {
+body .slide-content .left h1 {
   font-size: 67px;
   padding-top: 20px !important;
   line-height: 70px;
 }
-body .single-item .Sider1 .left button {
+body .slide-content .left button {
   margin-top: 48px !important;
   border: 1px solid #bcac76;
   background-color: transparent;
@@ -499,27 +508,34 @@ body .single-item .Sider1 .left button {
   font-weight: 600;
   padding: 10px 15px !important;
 }
-body .custom-dots {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+body h2 {
+  font-size: 24px;
 }
-body .custom-dots li {
+body p {
+  font-size: 16px;
+}
+body .slick-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  position: relative;
+  bottom: 20px !important;
+}
+body .slick-dots li {
+  margin: 0 5px !important;
   display: inline-block;
-  margin: 0 5px;
 }
-body .custom-dots li button {
-  width: 10px;
-  height: 10px;
+body .slick-dots li button {
+  color: transparent !important;
+  font-size: 12px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
-  background-color: #bbb;
   border: none;
+  background-color: #bbb;
   cursor: pointer;
+  transition: background-color 0.3;
 }
-body .custom-dots li button.slick-active {
-  background-color: #555;
+body .slick-dots li.slick-active button {
+  background-color: #bcac76;
 }/*# sourceMappingURL=index.css.map */
