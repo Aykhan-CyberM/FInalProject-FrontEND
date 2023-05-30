@@ -508,6 +508,11 @@ body .slide-content .left button {
   font-weight: 600;
   padding: 10px 15px !important;
 }
+body .slide-content .left button:hover {
+  color: black !important;
+  background-color: #bcac76;
+  transition: 300ms;
+}
 body h2 {
   font-size: 24px;
 }

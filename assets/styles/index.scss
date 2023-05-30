@@ -584,6 +584,11 @@ body {
                 font-weight: 600;
                 padding: 10px 15px !important;
             }
+            button:hover{
+                color: black !important;
+                background-color: #bcac76;
+                transition: 300ms;
+            }
         
         }
     }
@@ -625,5 +630,5 @@ body {
     .slick-dots li.slick-active button {
         background-color: #bcac76;
       }
-
-}
+      
+}   
