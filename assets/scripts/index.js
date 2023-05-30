@@ -29,7 +29,7 @@ brandContainer.forEach(btn => btn.addEventListener('click', () => {
 }))
 
 searchArea.addEventListener('click', () => {
-    makeActive(searchArea,"borderBlack")
+    makeActive(searchArea, "borderBlack")
 });
 
 engSection.addEventListener('click', () => {
@@ -61,7 +61,7 @@ docsBtn.addEventListener('click', () => {
 })
 
 
-function toggleDropdown(btn,dropdown , arrow) {
+function toggleDropdown(btn, dropdown, arrow) {
     dropdown.classList.toggle('show');
     arrow.classList.toggle('Rotate')
     document.addEventListener('click', function (event) {
@@ -105,3 +105,23 @@ function makeAcrtiveDropdowns(Element, container, show) {
         }
     })
 }
+
+$(document).ready(function () {
+    var slickOptions = {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 1000000, // Set autoplay speed to 5 seconds
+        infinite: true,
+        speed: 500,
+        easing: 'ease',
+        dots: true,
+        dotsClass: 'slick-dots custom-dots', // Custom class for dots
+        prevArrow: '', // Remove previous arrow
+        nextArrow: '', // Remove next arrow
+    };
+
+    $('.single-item').slick(slickOptions);
+});
+
+

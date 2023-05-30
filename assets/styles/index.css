@@ -269,7 +269,8 @@ body .main__navbar .main__navbar-navigations div:hover i {
   body .main__dropdowns .pages__dropdown {
     gap: 30px !important;
   }
-  body .main__dropdowns .pages__dropdown a, body .main__dropdowns .pages__dropdown h1 {
+  body .main__dropdowns .pages__dropdown a,
+  body .main__dropdowns .pages__dropdown h1 {
     font-size: 10px !important;
   }
   body .main__dropdowns .pages__dropdown img {
@@ -437,4 +438,88 @@ body .show {
 body .show a:hover {
   color: black !important;
   cursor: pointer;
+}
+body #backgroundSlider {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+body .single-item {
+  width: 100%;
+  height: 600px;
+  top: 0px;
+}
+body .single-item .item {
+  position: absolute;
+  z-index: 1;
+  width: 340px;
+}
+body .single-item .itemBeing {
+  position: absolute;
+  top: -136px;
+  margin-left: 72px;
+  width: 400px;
+  height: 700px;
+  transform: rotate(325deg);
+}
+body .single-item .Sider1 {
+  height: 500px;
+  width: 700px !important;
+  display: flex;
+  justify-content: space-around;
+}
+body .single-item .Sider1 .left {
+  margin: 117px 0px !important;
+  width: 553px;
+}
+body .single-item .Sider1 .left h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  letter-spacing: 5px;
+  font-weight: 400;
+}
+body .single-item .Sider1 .left h1 {
+  font-size: 67px;
+  padding-top: 20px !important;
+  line-height: 70px;
+}
+body .single-item .Sider1 .left button {
+  margin-top: 48px !important;
+  border: 1px solid #bcac76;
+  background-color: transparent;
+  color: #bcac76;
+  font-size: 13px;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  padding: 10px 15px !important;
+}
+body .custom-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+body .custom-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+body .custom-dots li button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #bbb;
+  border: none;
+  cursor: pointer;
+}
+body .custom-dots li button.slick-active {
+  background-color: #555;
 }/*# sourceMappingURL=index.css.map */
