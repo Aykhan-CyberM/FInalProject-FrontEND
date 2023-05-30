@@ -21,11 +21,16 @@ const pagesArrow = document.querySelector('#pagesArrow');
 const docsBtn = document.querySelector('#docsBtn');
 const docsDropdown = document.querySelector('.docs__dropdown');
 const docsArrow = document.querySelector('#docsArrow');
+const searchArea = document.querySelector('#searchArea');
 
 
 brandContainer.forEach(btn => btn.addEventListener('click', () => {
     makeActive(btn, "activeIcon")
 }))
+
+searchArea.addEventListener('click', () => {
+    makeActive(searchArea,"borderBlack")
+});
 
 engSection.addEventListener('click', () => {
     makeAcrtiveDropdowns(engArrow, engSection, language);
