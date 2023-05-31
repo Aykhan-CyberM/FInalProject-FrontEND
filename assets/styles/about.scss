@@ -60,7 +60,8 @@ body {
         .section2__headder {
             display: flex;
             align-items: center;
-            padding:70px 140px !important ;
+            padding: 70px 140px !important;
+
             h1 {
                 color: #bcac76;
                 font-size: 20px;
@@ -75,30 +76,36 @@ body {
                 width: 50px;
                 height: 1px;
                 background-color: black;
-                margin-right: 100px  !important;
+                margin-right: 100px !important;
             }
         }
+
         h2 {
-            padding: 0 290px  !important;
+            padding: 0 290px !important;
             padding-bottom: 60px !important;
             font-size: 65px;
             font-weight: 800;
-            
+
         }
     }
-    .section3__first{
+
+    .section3__first {
         display: flex;
-        div{
+
+        div {
             padding: 50px 80px !important;
-            img{
+
+            img {
                 width: 350px;
                 height: 550px;
             }
         }
-        .section3__fonts{
+
+        .section3__fonts {
             display: flex;
             flex-direction: column;
             justify-content: center;
+
             h1 {
                 color: #868e96;
                 font-size: 20px;
@@ -107,20 +114,55 @@ body {
                 text-transform: uppercase;
                 transform: scaleY(0.9);
             }
-            h2{
+
+            h2 {
                 font-weight: 600;
                 font-size: 30px;
                 padding: 20px 0 !important;
             }
-            p{
+
+            p {
                 color: #868e96;
                 font-weight: 500;
             }
         }
-        
+
     }
-    #section4__img{
+
+    #section4__img {
         height: 300px;
         width: 445px;
     }
+
+    .section5 {
+        .section5__grid-container {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr 1fr;
+            h2 {
+                font-weight: 600;
+                font-size: 35px;
+                padding: 20px 0 !important;
+            }
+            
+            p {
+                color: #868e96;
+                font-weight: 500;
+            }
+            .right__section5{
+                h2{
+                    font-size: 25px;
+                }
+                display: grid;
+                grid-template-columns: 1fr 1fr ;
+                gap: 20px;
+            }
+
+
+
+        }
+    }
+
+
+
 }

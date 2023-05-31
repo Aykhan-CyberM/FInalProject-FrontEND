@@ -105,4 +105,26 @@ body .section3__first .section3__fonts p {
 body #section4__img {
   height: 300px;
   width: 445px;
+}
+body .section5 .section5__grid-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+body .section5 .section5__grid-container h2 {
+  font-weight: 600;
+  font-size: 35px;
+  padding: 20px 0 !important;
+}
+body .section5 .section5__grid-container p {
+  color: #868e96;
+  font-weight: 500;
+}
+body .section5 .section5__grid-container .right__section5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+body .section5 .section5__grid-container .right__section5 h2 {
+  font-size: 25px;
 }/*# sourceMappingURL=about.css.map */
