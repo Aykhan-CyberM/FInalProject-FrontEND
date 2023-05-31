@@ -907,7 +907,7 @@ body .section7 .section7__left {
   margin: 88px !important;
 }
 body .section7 .section7__left #email__adress {
-  border-bottom: 1px solid black !important;
+  border-bottom: 1px solid #868e96 !important;
   display: flex;
   align-items: center;
   width: 320px;

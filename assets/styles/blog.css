@@ -1,0 +1,92 @@
+body .section1 {
+  width: 100%;
+  height: 620px;
+  background-image: url("/assets/images/blog_girl.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+body #section1__text {
+  margin-top: 120px !important;
+  z-index: 2;
+  text-align: center;
+}
+body #section1__text a {
+  text-decoration: none;
+  color: #bcac76;
+}
+body #section1__text a:hover {
+  text-decoration: underline;
+}
+body #section1__text span {
+  color: #868e96 !important;
+}
+body #section1__text h1 {
+  font-size: 50px;
+  font-weight: 600;
+  margin: 20px !important;
+}
+body #section1__text h2 {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 20px 40px !important;
+}
+body .main {
+  display: flex;
+  margin-top: 200px !important;
+  justify-content: center;
+}
+body .main .grid__container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 100px;
+}
+body .main .grid__container div {
+  width: 300px;
+  height: -moz-max-content;
+  height: max-content;
+}
+body .main .grid__container div img {
+  width: 100%;
+}
+body .main .grid__container div h1 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 15px 0 !important;
+}
+body .main .grid__container div h1:hover {
+  text-decoration: underline;
+  color: black;
+  cursor: pointer;
+}
+body .main .grid__container div a {
+  text-decoration: none;
+  color: #bcac76;
+}
+body .main .grid__container div a:hover {
+  text-decoration: underline;
+}
+body .main .grid__container div a:visited {
+  color: #bcac76;
+}
+body .main .grid__container div span {
+  color: #868e96;
+  font-weight: 600;
+  font-size: 15px;
+}
+body .navigation__blog {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px !important;
+  color: #868e96;
+}
+body .navigation__blog .hover-black:hover {
+  color: black;
+  cursor: pointer;
+}
+body .navigation__blog .hover-black:hover i {
+  color: black !important;
+}/*# sourceMappingURL=blog.css.map */

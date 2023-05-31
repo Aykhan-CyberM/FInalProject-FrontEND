@@ -30,7 +30,7 @@ brandContainer.forEach(btn => btn.addEventListener('click', () => {
 }))
 
 searchAreaFotter.addEventListener('click', () => {
-    makeActive(searchAreaFotter, "borderGray")
+    makeActive(searchAreaFotter, "borderBlack")
 });
 
 searchArea.addEventListener('click', () => {
