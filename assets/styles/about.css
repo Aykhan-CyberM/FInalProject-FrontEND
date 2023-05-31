@@ -4,12 +4,12 @@ body .main__navbar {
   width: 100%;
 }
 body .effect1 {
-  transform: translateY(-5%);
+  transform: translateY(-3%);
   transition: 300ms;
 }
 body .effect2 {
   transition: 300ms;
-  transform: translateY(5%);
+  transform: translateY(3%);
 }
 body .section1 {
   display: flex;
@@ -69,4 +69,40 @@ body .section2 h2 {
   padding-bottom: 60px !important;
   font-size: 65px;
   font-weight: 800;
+}
+body .section3__first {
+  display: flex;
+}
+body .section3__first div {
+  padding: 50px 80px !important;
+}
+body .section3__first div img {
+  width: 350px;
+  height: 550px;
+}
+body .section3__first .section3__fonts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+body .section3__first .section3__fonts h1 {
+  color: #868e96;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  transform: scaleY(0.9);
+}
+body .section3__first .section3__fonts h2 {
+  font-weight: 600;
+  font-size: 30px;
+  padding: 20px 0 !important;
+}
+body .section3__first .section3__fonts p {
+  color: #868e96;
+  font-weight: 500;
+}
+body #section4__img {
+  height: 300px;
+  width: 445px;
 }/*# sourceMappingURL=about.css.map */

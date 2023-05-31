@@ -6,13 +6,13 @@ body {
     }
 
     .effect1 {
-        transform: translateY(-5%);
+        transform: translateY(-3%);
         transition: 300ms;
     }
 
     .effect2 {
         transition: 300ms;
-        transform: translateY(5%);
+        transform: translateY(3%);
     }
 
     .section1 {
@@ -85,5 +85,42 @@ body {
             font-weight: 800;
             
         }
+    }
+    .section3__first{
+        display: flex;
+        div{
+            padding: 50px 80px !important;
+            img{
+                width: 350px;
+                height: 550px;
+            }
+        }
+        .section3__fonts{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h1 {
+                color: #868e96;
+                font-size: 20px;
+                font-weight: 600;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+                transform: scaleY(0.9);
+            }
+            h2{
+                font-weight: 600;
+                font-size: 30px;
+                padding: 20px 0 !important;
+            }
+            p{
+                color: #868e96;
+                font-weight: 500;
+            }
+        }
+        
+    }
+    #section4__img{
+        height: 300px;
+        width: 445px;
     }
 }
