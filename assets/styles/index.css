@@ -216,6 +216,7 @@ body .main__navbar #searchArea input {
   border: none;
   outline: none;
   width: 200px;
+  background-color: transparent;
 }
 body .main__navbar #searchArea input::-moz-placeholder {
   font-size: 15px;

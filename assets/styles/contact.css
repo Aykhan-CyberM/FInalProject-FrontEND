@@ -1,0 +1,230 @@
+body #contact__section1 {
+  width: 100%;
+  height: 620px;
+  background-image: url("/assets/images/contanct__main.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+body #section1__text {
+  margin-top: 120px !important;
+  z-index: 2;
+  text-align: center;
+}
+body #section1__text a {
+  text-decoration: none;
+  color: #bcac76;
+}
+body #section1__text a:hover {
+  text-decoration: underline;
+}
+body #section1__text span {
+  color: #868e96 !important;
+}
+body #section1__text h1 {
+  font-size: 50px;
+  font-weight: 600;
+  margin: 20px !important;
+}
+body #section1__text h2 {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 20px 40px !important;
+}
+body .main {
+  display: flex;
+  margin-top: 200px !important;
+  justify-content: center;
+}
+body .main .grid__container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 100px;
+}
+body .main .grid__container div {
+  width: 300px;
+  height: -moz-max-content;
+  height: max-content;
+}
+body .main .grid__container div img {
+  width: 100%;
+}
+body .main .grid__container div h1 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 15px 0 !important;
+}
+body .main .grid__container div h1:hover {
+  text-decoration: underline;
+  color: black;
+  cursor: pointer;
+}
+body .main .grid__container div a {
+  text-decoration: none;
+  color: #bcac76;
+}
+body .main .grid__container div a:hover {
+  text-decoration: underline;
+}
+body .main .grid__container div a:visited {
+  color: #bcac76;
+}
+body .main .grid__container div span {
+  color: #868e96;
+  font-weight: 600;
+  font-size: 15px;
+}
+body .navigation__blog {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px !important;
+  color: #868e96;
+}
+body .navigation__blog .hover-black:hover {
+  color: black;
+  cursor: pointer;
+}
+body .navigation__blog .hover-black:hover i {
+  color: black !important;
+}
+body .contact__section2 {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+body .contact__section2 .contact__about {
+  padding: 70px !important;
+}
+body .contact__section2 .contact__about h1 {
+  font-size: 25px;
+  font-weight: 700;
+  transform: scaleX(0.95);
+  padding-bottom: 10px !important;
+}
+body .contact__section2 .contact__about h2 {
+  color: #868e96;
+  transform: scaleX(0.95);
+  font-size: 15px;
+  padding-top: 10px !important;
+}
+body .contact__section3 {
+  background-color: rgba(134, 142, 150, 0.1647058824);
+  display: flex;
+  width: 100%;
+}
+body .contact__section3 .contact__left {
+  width: 100%;
+}
+body .contact__section3 .contact__left iframe {
+  width: 100%;
+  height: 1000px;
+}
+body .contact__section3 .contact__right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .contact__section3 .contact__right #first {
+  font-size: 70px;
+  margin-top: 80px !important;
+  color: #868e96;
+  font-weight: 600;
+}
+body .contact__section3 .contact__right .section3__about .dates {
+  border-bottom: 1px solid rgba(134, 142, 150, 0.137254902);
+  padding-bottom: 20px !important;
+  margin-top: 80px !important;
+  display: flex;
+  gap: 20px;
+}
+body .contact__section3 .contact__right .section3__about .dates h2 {
+  font-size: 14px;
+  width: 100px;
+  line-height: 22px;
+}
+body .contact__section3 .contact__right .section3__about .dates h1 {
+  width: 100px;
+  font-size: 25px;
+  font-weight: 600;
+  margin: auto 0 !important;
+}
+body .gridcontainer3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 80px 80px !important;
+  height: -moz-max-content;
+  height: max-content;
+}
+body .gridcontainer3 .left .title3 h1 {
+  color: rgba(0, 0, 0, 0.7843137255);
+  font-size: 70px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  padding: 0px 5px 40px;
+  text-transform: uppercase;
+}
+body .gridcontainer3 .left .title3 i {
+  margin-top: 50px !important;
+  font-size: 30px;
+  margin-right: 20px !important;
+  color: #bcac76;
+}
+body .gridcontainer3 .left .title3 i:hover {
+  color: #827652;
+  cursor: pointer;
+}
+body .gridcontainer3 .right2 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 90px;
+}
+body .gridcontainer3 .right2 input {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #868e96;
+  height: 40px;
+  width: 520px;
+}
+body .gridcontainer3 label {
+  margin-top: 20px !important;
+  display: block;
+  font-weight: 600;
+  color: black;
+  font-size: 15px;
+}
+body .gridcontainer3 #lName, body .gridcontainer3 #fName {
+  width: 234px !important;
+}
+body .gridcontainer3 .name-inputs {
+  display: flex;
+  gap: 50px;
+  width: 100px;
+}
+body .gridcontainer3 .name-inputs div {
+  margin-right: 20px;
+}
+body .gridcontainer3 #message {
+  height: 120px !important;
+}
+body .button {
+  font-weight: 600;
+  background-color: transparent;
+  color: #bcac76;
+  border: #bcac76 1px solid;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+  margin-top: 50px !important;
+  padding: 10px 25px !important;
+}
+body .button:hover {
+  background-color: #bcac76;
+  color: black;
+}
+body .section6 {
+  margin: 0 !important;
+}/*# sourceMappingURL=contact.css.map */
