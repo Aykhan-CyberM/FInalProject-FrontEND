@@ -248,6 +248,39 @@ body {
             }
         }
     }
+    
+    .about__section9{
+        display: flex;
+        background-color: #868e961c;
+        justify-content: space-around ;
+        margin-top: 50px !important;
+        padding: 100px !important;
 
+        img{
+            width: 100px;
+        }
+    }
+    .about__section10{
+        justify-content:  center;
+        text-align: center;
+        display: flex ;
+        flex-direction: column;
+        padding: 150px !important;
+        h1{
+            font-size: 30px;
+
+        }
+        div{
+            display: flex;
+            gap: 30px;
+            padding-top: 90px !important;
+            p{
+                color: #868e96;
+                font-size: 15px;
+                text-align: start;
+
+            }
+        }
+    }
 
 }

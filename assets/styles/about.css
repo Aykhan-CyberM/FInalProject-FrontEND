@@ -196,4 +196,34 @@ body .about__section8 div h2 {
   margin: 10 !important;
   font-size: 15px;
   color: #868e96;
+}
+body .about__section9 {
+  display: flex;
+  background-color: rgba(134, 142, 150, 0.1098039216);
+  justify-content: space-around;
+  margin-top: 50px !important;
+  padding: 100px !important;
+}
+body .about__section9 img {
+  width: 100px;
+}
+body .about__section10 {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 150px !important;
+}
+body .about__section10 h1 {
+  font-size: 30px;
+}
+body .about__section10 div {
+  display: flex;
+  gap: 30px;
+  padding-top: 90px !important;
+}
+body .about__section10 div p {
+  color: #868e96;
+  font-size: 15px;
+  text-align: start;
 }/*# sourceMappingURL=about.css.map */
