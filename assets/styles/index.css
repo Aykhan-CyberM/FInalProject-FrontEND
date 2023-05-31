@@ -718,39 +718,11 @@ body .section2 .section2__about #shopnow {
   text-transform: uppercase;
   font-weight: 600;
 }
-body .navigarions {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 70px !important;
-}
-body .navigarions #firstoneP {
-  color: black !important;
-}
-body .navigarions #allP {
-  color: #bcac76;
-  text-transform: uppercase;
-  text-decoration: none;
-  z-index: 1;
-  letter-spacing: 3px;
-  font-weight: 600;
-  font-size: 13px;
-}
-body .navigarions #allP:hover {
-  text-decoration: underline;
-}
-body .navigarions div {
-  display: flex;
-  gap: 10px;
-}
-body .navigarions div a {
-  color: #5f6469;
-  text-decoration: none;
-  z-index: 1;
-  font-weight: 600;
-}
-body .navigarions div a:hover {
-  text-decoration: underline;
-  color: black;
+body .section2 .section2__about button:hover {
+  transition: 400ms;
+  color: white !important;
+  background-color: black !important;
+  cursor: pointer;
 }
 body .section4 {
   transition: 330ms;
@@ -792,4 +764,197 @@ body .section4 .section4__product .section4__about:hover {
 body .section4 .section4__product .section4__price {
   font-size: 15px;
   color: rgba(134, 142, 150, 0.8352941176);
+}
+body .section5 {
+  padding: 20px 55px !important;
+  width: 100%;
+  height: 450px;
+  position: absolute;
+  margin-top: 100px !important;
+}
+body .section5 #section5__background {
+  width: 100%;
+  height: 100%;
+}
+body .section5 .section5__title {
+  position: absolute;
+  top: 120px;
+  left: 310px;
+  color: #303234;
+  text-align: center;
+}
+body .section5 .section5__title h1 {
+  padding-bottom: 25px !important;
+  font-size: 70px;
+  text-transform: capitalize;
+}
+body .section5 .section5__title h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+body .section5 .section5__title button {
+  background-color: transparent;
+  border: 1px solid #303234;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 900;
+  color: #303234;
+  padding: 10px 20px !important;
+  margin-top: 40px !important;
+  z-index: 3 !important;
+}
+body .section5 .section5__title button:hover {
+  transition: 400ms;
+  color: white !important;
+  background-color: black !important;
+}
+body #section5__chair {
+  width: 250px;
+  height: 430px;
+  left: 900px;
+  top: 70px;
+  position: relative;
+}
+body .navigarions {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 70px !important;
+}
+body .navigarions #firstoneP {
+  color: black !important;
+}
+body .navigarions #allP {
+  color: #bcac76;
+  text-transform: uppercase;
+  text-decoration: none;
+  z-index: 1;
+  letter-spacing: 3px;
+  font-weight: 600;
+  font-size: 13px;
+}
+body .navigarions #allP:hover {
+  text-decoration: underline;
+}
+body .navigarions div {
+  display: flex;
+  gap: 10px;
+}
+body .navigarions div a {
+  color: #5f6469;
+  text-decoration: none;
+  z-index: 1;
+  font-weight: 600;
+}
+body .navigarions div a:hover {
+  text-decoration: underline;
+  color: black;
+}
+body .end {
+  margin-top: 95px !important;
+  width: 100%;
+  height: 1px;
+  color: transparent;
+}
+body .section6 {
+  display: flex;
+  margin-top: 50px !important;
+  background-color: rgba(134, 142, 150, 0.0862745098);
+  justify-content: center;
+  justify-content: space-evenly;
+}
+body .section6 .item {
+  padding: 120px 0px !important;
+  display: flex;
+  gap: 20px;
+}
+body .section6 .item i {
+  font-size: 30px;
+  color: #868e96;
+}
+body .section6 .item h1 {
+  font-size: 14px;
+  font-weight: 700;
+  padding-bottom: 10px !important;
+}
+body .section6 .item h2 {
+  font-size: 14px;
+  color: #5f6469;
+  font-weight: 400;
+}
+body .section7 {
+  display: flex;
+}
+body .section7 .section7__right {
+  display: flex;
+}
+body .section7 .section7__right .horizontal__Info {
+  margin: 85px 80px !important;
+}
+body .section7 .section7__right .horizontal__Info h1 {
+  font-size: 16px;
+  margin-bottom: 20px !important;
+}
+body .section7 .section7__right .horizontal__Info li {
+  margin-top: 10px !important;
+  list-style: none;
+  color: #868e96;
+  font-weight: 500;
+}
+body .section7 .section7__left {
+  display: flex;
+  flex-direction: column;
+  margin: 88px !important;
+}
+body .section7 .section7__left #email__adress {
+  border-bottom: 1px solid black !important;
+  display: flex;
+  align-items: center;
+  width: 320px;
+}
+body .section7 .section7__left #email__adress .borderGray {
+  border-color: #868e96 !important;
+}
+body .section7 .section7__left #email__adress input {
+  outline: none;
+  border: none;
+  margin-right: 80px !important;
+}
+body .section7 .section7__left i {
+  font-size: 30px;
+  color: #868e96;
+}
+body .section7 .section7__left h1 {
+  font-size: 14px;
+  font-weight: 700;
+  padding-bottom: 10px !important;
+}
+body .section7 .section7__left h2 {
+  font-size: 14px;
+  color: #5f6469;
+  font-weight: 500;
+  line-height: 25px;
+  margin-bottom: 20px !important;
+}
+body .section7 .section7__left input::-moz-placeholder {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(134, 142, 150, 0.6823529412);
+  text-transform: capitalize;
+}
+body .section7 .section7__left input::placeholder {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgba(134, 142, 150, 0.6823529412);
+  text-transform: capitalize;
+}
+body .footerEnd {
+  color: rgba(134, 142, 150, 0.5607843137) !important;
+  text-decoration: none;
+  font-size: 13px !important;
+  font-weight: 300 !important;
+  padding: 20px 0px !important;
+}
+body .footerEnd:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=index.css.map */

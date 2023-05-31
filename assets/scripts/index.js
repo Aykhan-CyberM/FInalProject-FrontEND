@@ -22,11 +22,16 @@ const docsBtn = document.querySelector('#docsBtn');
 const docsDropdown = document.querySelector('.docs__dropdown');
 const docsArrow = document.querySelector('#docsArrow');
 const searchArea = document.querySelector('#searchArea');
+const searchAreaFotter = document.querySelector('#email__adress');
 
 
 brandContainer.forEach(btn => btn.addEventListener('click', () => {
     makeActive(btn, "activeIcon")
 }))
+
+searchAreaFotter.addEventListener('click', () => {
+    makeActive(searchAreaFotter, "borderGray")
+});
 
 searchArea.addEventListener('click', () => {
     makeActive(searchArea, "borderBlack")
