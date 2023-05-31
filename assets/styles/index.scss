@@ -3,6 +3,7 @@
     margin: 0 !important;
     padding: 0 !important;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 
@@ -176,7 +177,6 @@ body {
             font-weight: 500;
             color: black;
             user-select: none;
-
         }
 
         .iconsNavbar {
