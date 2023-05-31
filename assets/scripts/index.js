@@ -28,6 +28,48 @@ const burgermenu = document.querySelector('.burgermenu__mainnavbar');
 const smallNav = document.querySelector('.main__navbar-smaller');
 
 
+
+///responsive 
+const homeBtn2 = document.querySelector('#homeBtn2');
+const homeDropdown2 = document.querySelector('.home__dropdown2');
+const homeArrow2 = document.querySelector('#homeArrow2');
+const shopBtn2 = document.querySelector('#shopBtn2');
+const shopDropdown2 = document.querySelector('.shop__dropdown2');
+const shopArrow2 = document.querySelector('#shopArrow2');
+const iconsBtn2 = document.querySelector('#iconsBtn2');
+const iconsDropdown2 = document.querySelector('.icons__dropdown2');
+const iconsArrow2 = document.querySelector('#iconsArrow2');
+const pagesBtn2 = document.querySelector('#pagesBtn2');
+const pagesDropdown2 = document.querySelector('.pages__dropdown2');
+const pagesArrow2 = document.querySelector('#pagesArrow2');
+const docsBtn2 = document.querySelector('#docsBtn2');
+const docsDropdown2 = document.querySelector('.docs__dropdown2');
+const docsArrow2 = document.querySelector('#docsArrow2');
+
+////
+homeBtn2.addEventListener('click', () => {
+    toggleDropdown(homeBtn2, homeDropdown2, homeArrow2)
+})
+
+shopBtn2.addEventListener('click', () => {
+    toggleDropdown(shopBtn2, shopDropdown2, shopArrow2)
+})
+
+iconsBtn2.addEventListener('click', () => {
+    toggleDropdown(iconsBtn2, iconsDropdown2, iconsArrow2)
+})
+
+pagesBtn2.addEventListener('click', () => {
+    toggleDropdown(pagesBtn2, pagesDropdown2, pagesArrow2)
+})
+docsBtn2.addEventListener('click', () => {
+    toggleDropdown(docsBtn2, docsDropdown2, docsArrow2)
+})
+
+
+
+///
+
 burgermenuBtn.addEventListener('click', () => {
     toggleDropdown(burgermenuBtn, burgermenu, shopArrow)
     makeActive(smallNav, "bcolorWhite")
@@ -79,8 +121,10 @@ docsBtn.addEventListener('click', () => {
 function toggleDropdown(btn, dropdown, arrow) {
     dropdown.classList.toggle('show');
     arrow.classList.toggle('Rotate')
+    btn.classList.toggle('colorBlack')
     document.addEventListener('click', function (event) {
         if (!btn.contains(event.target)) {
+            btn.classList.remove('colorBlack');
             dropdown.classList.remove('show');
             dropdown.style.cursor = "default"
             arrow.classList.remove('Rotate')
