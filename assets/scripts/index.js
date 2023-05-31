@@ -23,6 +23,16 @@ const docsDropdown = document.querySelector('.docs__dropdown');
 const docsArrow = document.querySelector('#docsArrow');
 const searchArea = document.querySelector('#searchArea');
 const searchAreaFotter = document.querySelector('#email__adress');
+const burgermenuBtn = document.querySelector('.burgermenuBtn');
+const burgermenu = document.querySelector('.burgermenu__mainnavbar');
+const smallNav = document.querySelector('.main__navbar-smaller');
+
+
+burgermenuBtn.addEventListener('click', () => {
+    toggleDropdown(burgermenuBtn, burgermenu, shopArrow)
+    makeActive(smallNav, "bcolorWhite")
+})
+
 
 
 brandContainer.forEach(btn => btn.addEventListener('click', () => {
@@ -74,6 +84,7 @@ function toggleDropdown(btn, dropdown, arrow) {
             dropdown.classList.remove('show');
             dropdown.style.cursor = "default"
             arrow.classList.remove('Rotate')
+            smallNav.classList.remove('bcolorWhite')
         }
     })
 }
