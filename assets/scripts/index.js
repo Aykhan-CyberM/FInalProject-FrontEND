@@ -45,25 +45,32 @@ const pagesArrow2 = document.querySelector('#pagesArrow2');
 const docsBtn2 = document.querySelector('#docsBtn2');
 const docsDropdown2 = document.querySelector('.docs__dropdown2');
 const docsArrow2 = document.querySelector('#docsArrow2');
+const menu = document.querySelector('.burgermenu__mainnavbar');
 
 ////
 homeBtn2.addEventListener('click', () => {
-    toggleDropdown(homeBtn2, homeDropdown2, homeArrow2)
+    toggleDropdown2(homeBtn2, homeDropdown2, homeArrow2)
+    makeActive(homeBtn2, "padding")
 })
 
 shopBtn2.addEventListener('click', () => {
-    toggleDropdown(shopBtn2, shopDropdown2, shopArrow2)
+    toggleDropdown2(shopBtn2, shopDropdown2, shopArrow2)
+    makeActive(shopBtn2, "padding2")
 })
 
 iconsBtn2.addEventListener('click', () => {
-    toggleDropdown(iconsBtn2, iconsDropdown2, iconsArrow2)
+    toggleDropdown2(iconsBtn2, iconsDropdown2, iconsArrow2)
+    makeActive(iconsBtn2, "padding2")
 })
 
 pagesBtn2.addEventListener('click', () => {
-    toggleDropdown(pagesBtn2, pagesDropdown2, pagesArrow2)
+    toggleDropdown2(pagesBtn2, pagesDropdown2, pagesArrow2)
+    makeActive(pagesBtn2, "padding2")
+    menu.classList.toggle("height")
 })
 docsBtn2.addEventListener('click', () => {
-    toggleDropdown(docsBtn2, docsDropdown2, docsArrow2)
+    toggleDropdown2(docsBtn2, docsDropdown2, docsArrow2)
+    makeActive(docsBtn2, "padding2")
 })
 
 
@@ -123,9 +130,24 @@ function toggleDropdown(btn, dropdown, arrow) {
     arrow.classList.toggle('Rotate')
     btn.classList.toggle('colorBlack')
     document.addEventListener('click', function (event) {
-        if (!btn.contains(event.target)) {
+        if (!btn.contains(event.target) && !dropdown.contains(event.target)) {
             btn.classList.remove('colorBlack');
             dropdown.classList.remove('show');
+            dropdown.style.cursor = "default"
+            arrow.classList.remove('Rotate')
+        }
+    })
+}
+
+function toggleDropdown2(btn, dropdown, arrow) {
+    dropdown.classList.toggle('show__burger');
+    arrow.classList.toggle('Rotate')
+    btn.classList.toggle('colorBlack')
+    burgermenu.classList.add("PosStatic")
+    document.addEventListener('click', function (event) {
+        if (!btn.contains(event.target) && !dropdown.contains(event.target)) {
+            btn.classList.remove('colorBlack');
+            dropdown.classList.remove('show__burger');
             dropdown.style.cursor = "default"
             arrow.classList.remove('Rotate')
             smallNav.classList.remove('bcolorWhite')
@@ -166,19 +188,19 @@ function makeAcrtiveDropdowns(Element, container, show) {
     })
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
     $('.slider').slick({
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 100000,
-      fade: false,
-      prevArrow: false,
-      nextArrow: false
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 100000,
+        fade: false,
+        prevArrow: false,
+        nextArrow: false
     });
-  });
-  
+});
+
 
