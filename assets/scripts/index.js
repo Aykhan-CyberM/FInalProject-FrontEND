@@ -26,9 +26,6 @@ const searchAreaFotter = document.querySelector('#email__adress');
 const burgermenuBtn = document.querySelector('.burgermenuBtn');
 const burgermenu = document.querySelector('.burgermenu__mainnavbar');
 const smallNav = document.querySelector('.main__navbar-smaller');
-
-
-
 ///responsive 
 const homeBtn2 = document.querySelector('#homeBtn2');
 const homeDropdown2 = document.querySelector('.home__dropdown2');
@@ -76,9 +73,6 @@ docsBtn2.addEventListener('click', () => {
     makeActive(menu,"height3")
     menu.classList.remove("height2")
 })
-
-
-
 ///
 
 function makeActive(Element, active) {
@@ -89,7 +83,6 @@ function makeActive(Element, active) {
         }
     })
 }
-
 //
 burgermenuBtn.addEventListener('click', () => {
     toggleDropdown2(burgermenuBtn, burgermenu, shopArrow)
@@ -121,7 +114,7 @@ function toggleDropdown3(btn, dropdown, arrow) {
     arrow.classList.toggle('Rotate')
     btn.classList.toggle('colorBlack')
     document.addEventListener('click', function (event) {
-        if (!btn.contains(event.target) && !dropdown.contains(event.target)) {
+        if (!btn.contains(event.target)) {
             btn.classList.remove('colorBlack');
             dropdown.classList.remove('show__burger');
             dropdown.style.cursor = "default"
@@ -129,10 +122,6 @@ function toggleDropdown3(btn, dropdown, arrow) {
         }
     })
 }
-
-
-
-
 brandContainer.forEach(btn => btn.addEventListener('click', () => {
     makeActive(btn, "activeIcon")
 }))
@@ -152,7 +141,6 @@ engSection.addEventListener('click', () => {
 usdSection.addEventListener('click', () => {
     makeAcrtiveDropdowns(usdArrow, usdSection, currency)
 })
-
 // activeFunction
 homeBtn.addEventListener('click', () => {
     toggleDropdown(homeBtn, homeDropdown, homeArrow)
@@ -161,19 +149,15 @@ homeBtn.addEventListener('click', () => {
 shopBtn.addEventListener('click', () => {
     toggleDropdown(shopBtn, shopDropdown, shopArrow)
 })
-
 iconsBtn.addEventListener('click', () => {
     toggleDropdown(iconsBtn, iconsDropdown, iconsArrow)
 })
-
 pagesBtn.addEventListener('click', () => {
     toggleDropdown(pagesBtn, pagesDropdown, pagesArrow)
 })
 docsBtn.addEventListener('click', () => {
     toggleDropdown(docsBtn, docsDropdown, docsArrow)
 })
-
-
 function toggleDropdown(btn, dropdown, arrow) {
     dropdown.classList.toggle('show');
     arrow.classList.toggle('Rotate')
@@ -187,9 +171,6 @@ function toggleDropdown(btn, dropdown, arrow) {
         }
     })
 }
-
-
-
 function makeAcrtiveDropdowns(Element, container, show) {
     if (Element.classList.contains("Rotate")) {
         Element.classList.remove("Rotate");
