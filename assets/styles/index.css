@@ -2311,6 +2311,7 @@ body .section1__small {
     margin: 21px !important;
   }
   .navigarions {
+    text-align: center;
     display: flex;
     flex-direction: column !important;
     align-items: center;
