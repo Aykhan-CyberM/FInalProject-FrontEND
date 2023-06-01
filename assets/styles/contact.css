@@ -196,7 +196,8 @@ body .gridcontainer3 label {
   color: black;
   font-size: 15px;
 }
-body .gridcontainer3 #lName, body .gridcontainer3 #fName {
+body .gridcontainer3 #lName,
+body .gridcontainer3 #fName {
   width: 234px !important;
 }
 body .gridcontainer3 .name-inputs {
@@ -227,4 +228,11 @@ body .button:hover {
 }
 body .section6 {
   margin: 0 !important;
+}
+
+@media only screen and (max-width: 900px) {
+  body #homeLink {
+    z-index: 10 !important;
+    position: relative;
+  }
 }/*# sourceMappingURL=contact.css.map */

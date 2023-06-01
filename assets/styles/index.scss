@@ -1293,6 +1293,7 @@ body {
                 flex-direction: column;
                 gap: 20px;
                 opacity: 0;
+                user-select: none;
                 .borderBlack {
                     border-color: black !important;
                     transition: all 500ms;

@@ -89,4 +89,11 @@ body .navigation__blog .hover-black:hover {
 }
 body .navigation__blog .hover-black:hover i {
   color: black !important;
+}
+
+@media only screen and (max-width: 900px) {
+  body #homeLink {
+    z-index: 10 !important;
+    position: relative;
+  }
 }/*# sourceMappingURL=blog.css.map */

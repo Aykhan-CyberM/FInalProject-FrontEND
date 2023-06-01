@@ -1080,6 +1080,9 @@ body .main__navbar-smaller {
     flex-direction: column;
     gap: 20px;
     opacity: 0;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
     color: #868e96 !important;
     gap: 15px;
   }

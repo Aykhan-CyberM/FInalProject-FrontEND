@@ -192,9 +192,10 @@ body {
 
   .gridcontainer3 {
     display: grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     padding: 80px 80px !important;
     height: max-content;
+
     .left {
       .title3 {
         h1 {
@@ -205,75 +206,91 @@ body {
           padding: 0px 5px 40px;
           text-transform: uppercase;
         }
-  
+
         i {
           margin-top: 50px !important;
           font-size: 30px;
           margin-right: 20px !important;
           color: #bcac76;
-          &:hover{
+
+          &:hover {
             color: #827652;
             cursor: pointer;
           }
         }
       }
     }
-  
+
     .right2 {
       display: flex;
       flex-direction: column;
       margin-left: 90px;
-  
+
       input {
         outline: none;
         border: none;
         border-bottom: 1px solid #868e96;
         height: 40px;
         width: 520px;
-  
-        }
-      }
-  
-      label {
-        margin-top: 20px !important;
-        display: block;
-        font-weight: 600;
-        color: black;
-        font-size: 15px;
-      }
-      #lName , #fName{
-        width: 234px !important; 
-      }
-      .name-inputs {
-        display: flex;
-        gap: 50px;
-        width: 100px;
-  
-        div {
-          margin-right: 20px;
-        }
-      }
-      #message{
-        height: 120px !important;
+
       }
     }
-    .button{
+
+    label {
+      margin-top: 20px !important;
+      display: block;
       font-weight: 600;
-      background-color: transparent ;
-      color: #bcac76;
-      border:#bcac76 1px solid;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      font-size: 12px;
-      margin-top: 50px !important;
-      padding: 10px  25px !important;
-      &:hover{
-        background-color: #bcac76;
-        color:black
+      color: black;
+      font-size: 15px;
+    }
+
+    #lName,
+    #fName {
+      width: 234px !important;
+    }
+
+    .name-inputs {
+      display: flex;
+      gap: 50px;
+      width: 100px;
+
+      div {
+        margin-right: 20px;
       }
     }
-    .section6{
-      margin: 0 !important;
+
+    #message {
+      height: 120px !important;
     }
   }
-  
+
+  .button {
+    font-weight: 600;
+    background-color: transparent;
+    color: #bcac76;
+    border: #bcac76 1px solid;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 12px;
+    margin-top: 50px !important;
+    padding: 10px 25px !important;
+
+    &:hover {
+      background-color: #bcac76;
+      color: black
+    }
+  }
+
+  .section6 {
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    #homeLink {
+      z-index: 10 !important;
+      position: relative;
+    }
+  }
+}

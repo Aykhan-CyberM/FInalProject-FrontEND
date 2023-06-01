@@ -98,3 +98,12 @@ body {
     }
 
 }
+
+@media only screen and (max-width: 900px) {
+    body {
+      #homeLink {
+        z-index: 10 !important;
+        position: relative;
+      }
+    }
+  }
