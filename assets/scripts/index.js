@@ -49,38 +49,87 @@ const menu = document.querySelector('.burgermenu__mainnavbar');
 
 ////
 homeBtn2.addEventListener('click', () => {
-    toggleDropdown2(homeBtn2, homeDropdown2, homeArrow2)
+    toggleDropdown3(homeBtn2, homeDropdown2, homeArrow2)
     makeActive(homeBtn2, "padding")
 })
 
 shopBtn2.addEventListener('click', () => {
-    toggleDropdown2(shopBtn2, shopDropdown2, shopArrow2)
+    toggleDropdown3(shopBtn2, shopDropdown2, shopArrow2)
     makeActive(shopBtn2, "padding2")
+    makeActive(menu,"height")
 })
 
 iconsBtn2.addEventListener('click', () => {
-    toggleDropdown2(iconsBtn2, iconsDropdown2, iconsArrow2)
-    makeActive(iconsBtn2, "padding2")
+    toggleDropdown3(iconsBtn2, iconsDropdown2, iconsArrow2)
+    makeActive(iconsBtn2, "padding4")
+    makeActive(menu,"height")
 })
 
 pagesBtn2.addEventListener('click', () => {
-    toggleDropdown2(pagesBtn2, pagesDropdown2, pagesArrow2)
-    makeActive(pagesBtn2, "padding2")
-    menu.classList.toggle("height")
+    toggleDropdown3(pagesBtn2, pagesDropdown2, pagesArrow2)
+    makeActive(pagesBtn2, "padding3")
+    makeActive(menu,"height2")
 })
 docsBtn2.addEventListener('click', () => {
-    toggleDropdown2(docsBtn2, docsDropdown2, docsArrow2)
+    toggleDropdown3(docsBtn2, docsDropdown2, docsArrow2)
     makeActive(docsBtn2, "padding2")
+    makeActive(menu,"height3")
+    menu.classList.remove("height2")
 })
 
 
 
 ///
 
+function makeActive(Element, active) {
+    Element.classList.toggle(active);
+    document.addEventListener('click', (event) => {
+        if (!Element.contains(event.target)) {
+            Element.classList.remove(active)
+        }
+    })
+}
+
+//
 burgermenuBtn.addEventListener('click', () => {
-    toggleDropdown(burgermenuBtn, burgermenu, shopArrow)
-    makeActive(smallNav, "bcolorWhite")
+    toggleDropdown2(burgermenuBtn, burgermenu, shopArrow)
 })
+function toggleDropdown2(btn, dropdown, arrow) {
+    dropdown.classList.toggle('show__burger');
+    arrow.classList.toggle('Rotate')
+    btn.classList.toggle('colorBlack')
+    smallNav.classList.add("bcolorWhite")
+    document.addEventListener('click', function (event) {
+        if (!btn.contains(event.target) && !dropdown.contains(event.target)) {
+            btn.classList.remove('colorBlack');
+            dropdown.classList.remove('show__burger');
+            dropdown.style.cursor = "default"
+            arrow.classList.remove('Rotate')
+            smallNav.classList.remove("bcolorWhite")
+        }
+    })
+    if (dropdown.classList.contains('show__burger')) {
+        smallNav.classList.add("bcolorWhite")
+    }
+    else {
+        smallNav.classList.remove("bcolorWhite")
+    }
+
+}
+function toggleDropdown3(btn, dropdown, arrow) {
+    dropdown.classList.toggle('show__burger');
+    arrow.classList.toggle('Rotate')
+    btn.classList.toggle('colorBlack')
+    document.addEventListener('click', function (event) {
+        if (!btn.contains(event.target) && !dropdown.contains(event.target)) {
+            btn.classList.remove('colorBlack');
+            dropdown.classList.remove('show__burger');
+            dropdown.style.cursor = "default"
+            arrow.classList.remove('Rotate')
+        }
+    })
+}
+
 
 
 
@@ -139,34 +188,7 @@ function toggleDropdown(btn, dropdown, arrow) {
     })
 }
 
-function toggleDropdown2(btn, dropdown, arrow) {
-    dropdown.classList.toggle('show__burger');
-    arrow.classList.toggle('Rotate')
-    btn.classList.toggle('colorBlack')
-    burgermenu.classList.add("PosStatic")
-    document.addEventListener('click', function (event) {
-        if (!btn.contains(event.target) && !dropdown.contains(event.target)) {
-            btn.classList.remove('colorBlack');
-            dropdown.classList.remove('show__burger');
-            dropdown.style.cursor = "default"
-            arrow.classList.remove('Rotate')
-            smallNav.classList.remove('bcolorWhite')
-        }
-    })
-}
 
-function makeActive(Element, active) {
-    if (Element.classList.contains(active)) {
-        Element.classList.remove(active);
-    } else {
-        Element.classList.add(active);
-    }
-    document.addEventListener('click', (event) => {
-        if (!Element.contains(event.target)) {
-            Element.classList.remove(active)
-        }
-    })
-}
 
 function makeAcrtiveDropdowns(Element, container, show) {
     if (Element.classList.contains("Rotate")) {
@@ -196,7 +218,7 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 100000,
+        autoplaySpeed: 4000,
         fade: false,
         prevArrow: false,
         nextArrow: false

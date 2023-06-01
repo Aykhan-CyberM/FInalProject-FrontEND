@@ -1226,6 +1226,14 @@ body {
             padding-bottom: 300px !important;
             transition: 300ms;
         }
+        .padding3 {
+            padding-bottom: 700px !important;
+            transition: 300ms;
+        }
+        .padding4 {
+            padding-bottom: 220px !important;
+            transition: 300ms;
+        }
 
         .bcolorWhite {
             background-color: white;
@@ -1263,26 +1271,27 @@ body {
                 }
 
             }
-            .PosStatic{
-                position: static !important;
-            }
             .height{
                 height: 900px !important;
             }
-            .burgermenu__mainnavbar {
+            .height2{
+                height: 1100px !important;
+            }
+            .height3{
+                height: 500px !important;
+            }
+            .burgermenu__mainnavbar { //Menu section 
                 z-index: -1;
                 padding: 18px 16px !important;
                 background-color: white;
                 display: flex;
                 width: 100%;
-                height: 420px;
+                height: 0;
                 transition: height 0.5s ease;
                 overflow: hidden;
                 flex-direction: column;
                 gap: 20px;
                 opacity: 0;
-                position: absolute;
-
                 .borderBlack {
                     border-color: black !important;
                     transition: all 500ms;
@@ -1348,6 +1357,7 @@ body {
 
         //NAV DROP
         .main__dropdownsSmaller {
+
             .pages__dropdown2 {
                 opacity: 0;
                 display: flex;
@@ -1355,7 +1365,6 @@ body {
                 transform: translate(-50%, 0%);
                 top: 220px !important;
                 left: 338px !important;
-                opacity: 0;
                 width: 600px  !important;
                 justify-content: space-between;
                 a {
@@ -1393,7 +1402,6 @@ body {
                     display: flex;
                     flex-direction: column;
                 }
-
                 .cutomer {
                     display: flex;
                     flex-direction: column;
@@ -1402,6 +1410,7 @@ body {
 
             .icons__dropdown2 {
                 left: 24px !important;
+                height: max-content !important;
                 top: 200px !important;
                 transition: all 400ms;
                 opacity: 0;
@@ -1438,7 +1447,8 @@ body {
                 gap: 2px;
                 top: 111px !important;
                 left: 24px !important;
-                opacity: 0;
+                opacity: 1;
+                height: max-content !important;
             }
 
             ///234234
@@ -1470,7 +1480,8 @@ body {
                 justify-content: space-around;
                 top: 150px !important;
                 left: 25px !important;
-                opacity: 1 !important;
+                height: max-content !important ;
+                opacity: 0;
 
                 h1 {
                     color: black;
@@ -1500,7 +1511,7 @@ body {
             .dropdown {
                 z-index: -3;
                 position: absolute;
-                background-color: white;
+                background-color: transparent; //color transparent
                 color: #868e96;
                 font-size: 15px;
                 font-weight: 400;
@@ -1547,7 +1558,7 @@ body {
             top: 0px !important;
             transition-duration: 300ms;
             z-index: 3 !important;
-
+            height: 420px !important;
             a:hover {
                 color: black !important;
                 cursor: pointer;
