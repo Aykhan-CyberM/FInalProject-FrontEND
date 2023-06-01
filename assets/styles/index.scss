@@ -2061,13 +2061,14 @@ body {
         .navigarions {
             display: flex;
             flex-direction: column !important;
-            align-items: center;
-            padding: 0 !important;
-
+            align-items: start;
+            padding-left: 20px !important;
             a {
                 padding: 20 !important;
             }
-
+            #allP{
+                padding-top: 20px !important;
+            }
             .endItems {
                 display: flex;
                 flex-direction: row;
@@ -2346,10 +2347,10 @@ body {
         }
 
     }
+
     body .section2 .section2__about {
-    padding: 50px !important;
+        padding: 50px !important;
     }
-    
 
     .section4 {
         transition: 330ms;
@@ -2372,7 +2373,7 @@ body {
             overflow: hidden;
         }
     }
-    //asd
+
     .section5 {
         .section5__title {
             h1 {
@@ -2383,6 +2384,7 @@ body {
                 font-size: 20px !important;
                 font-weight: 400;
             }
+
             button {
                 background-color: transparent;
                 border: 1px solid #303234;
@@ -2403,14 +2405,16 @@ body {
             }
         }
     }
+
     #section5__chair {
         display: none;
     }
 
     //fotter start
     body .section6 {
-    margin-top: 500px !important;
+        margin-top: 500px !important;
     }
+
     .section6 {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -2555,6 +2559,294 @@ body {
         }
     }
 
+    .navigarions {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center;
+        padding: 0 !important;
+
+        a {
+            padding: 20 !important;
+        }
+
+        .endItems {
+            display: flex;
+            flex-direction: row;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    //asd
+    .slide {
+
+        .slide-content {
+            display: flex;
+            justify-content: flex-start !important;
+            padding-left: 0px !important;
+            width: 79% !important;
+
+            .right {
+                display: none;
+            }
+
+            .left {
+                margin: 0 !important;
+                width: 553px;
+
+                p {
+                    color: #868e96;
+                }
+
+                h1 {
+                    width: max-content;
+                }
+            }
+        }
+    }
+
+    .top__navbar {
+        .top__navbar-sellections {
+            display: none !important;
+        }
+
+        .navbar__contact {
+            gap: 28px;
+            display: none !important;
+        }
+
+        #nav_center {
+            right: 0 !important;
+        }
+    }
+
+    //mainContent start
+    .slide-content {
+        height: 500px !important;
+        padding: 0px !important;
+        padding-left: 60px !important;
+        width: 100%;
+        justify-content: center;
+
+        .right {
+            .itemBeing {
+                width: 380px;
+                bottom: 0px !important;
+            }
+        }
+
+        .left {
+            h1 {
+                font-size: 67px;
+                padding-top: 20px !important;
+                line-height: 35px !important;
+            }
+
+            button {
+                margin-top: 0px !important;
+                border: 1px solid #bcac76;
+                background-color: transparent;
+                color: #bcac76;
+                font-size: 13px;
+                text-transform: uppercase;
+                word-spacing: -3px !important;
+                letter-spacing: 4px;
+                font-weight: 600;
+                padding: 10px 25px !important;
+            }
+        }
+    }
+
+
+    .section1 {
+        display: none;
+    }
+
+    .section1__small {
+        display: block !important;
+        width: 100%;
+
+        .products__gridcontaier {
+            display: grid;
+            grid-template-columns: auto;
+            width: 100%;
+            transform: translate(10%);
+
+            .product:hover {
+                transform: scale(1.1);
+                cursor: pointer;
+                transition: 300ms;
+            }
+
+            .product {
+                z-index: 2;
+                padding-bottom: 100px !important;
+
+                img {
+                    width: 100%;
+                }
+
+                h1 {
+                    font-size: 32px;
+                    font-weight: 600;
+                    width: 50px;
+                    color: rgba(0, 0, 0, 0.777);
+                }
+
+                p {
+                    color: #868e96;
+                    font-weight: 600;
+                    font-size: 16px;
+                    padding: 20px 0 !important;
+                }
+
+                a {
+                    font-size: 12px;
+                    letter-spacing: 3px;
+                    text-transform: uppercase;
+                    font-weight: 600;
+                    outline: none;
+                    text-decoration: none;
+                    color: currentColor !important;
+                    padding: 20px 0 !important;
+                }
+
+                a:visited {
+                    color: currentColor !important;
+                }
+            }
+
+            #book {
+                img {
+                    width: 80%;
+                    height: 380px;
+                }
+
+            }
+
+            #chair {
+                display: flex;
+
+                #chairText {
+                    position: relative;
+                    left: 10px;
+                    margin-top: 100px !important;
+                }
+
+                img {
+                    z-index: -1;
+                    width: 340px;
+                    height: 400px;
+                }
+            }
+
+            #clock {
+                display: flex;
+
+                img {
+                    z-index: -1;
+                    width: 300px;
+                    height: 280px;
+                    margin-left: 20px !important;
+                }
+
+                .aboutText {
+                    position: relative;
+                    top: 90px;
+                }
+            }
+
+            #box {
+                img {
+                    width: 400px;
+                }
+            }
+
+            #clock2 {
+                img {
+                    width: 400px;
+                }
+            }
+
+            #chair3 {
+                display: flex;
+
+                img {
+                    z-index: -1;
+                    width: 309px;
+                    height: 339px;
+                }
+
+                .aboutText {
+                    position: relative;
+                    top: 100px;
+                }
+            }
+        }
+    }
+
+    .section2 {
+        #section2Back {
+            width: 100%;
+            height: 900px !important;
+            position: absolute;
+            z-index: -1;
+        }
+
+         .section2__about #time {
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            margin: 20px 0px !important;
+            position: relative;
+            width: 412px !important;
+            height: 77px; 
+        }
+
+    }
+
+    body .section2 .section2__about {
+        padding: 50px !important;
+    }
+
+    .section4 {
+        transform: translate(5%, 0%) !important;
+    }
+    .section5__title{
+        position: relative;
+        right: 90px;
+    }
+    body .section5 {
+        padding: 20px 13px !important;
+        width: 100%;
+        height: 450px;
+        position: absolute;
+        margin-top: 100px !important;
+    }
+
+    #section5__chair {
+        display: none;
+    }
+
+    //fotter start
+    body .section6 {
+        margin-top: 500px !important;
+    }
+    
+    body .section6 .item {
+        padding: 25px !important;
+        display: flex;
+        gap: 20px;
+    }
+    .section6 {
+        display: grid;
+        grid-template-columns:  1fr !important;
+    }
+
+    body .section7 .section7__left {
+        margin: 21px !important;
+    }
+    
     .navigarions {
         display: flex;
         flex-direction: column !important;
