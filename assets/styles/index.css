@@ -907,6 +907,9 @@ body .section6 .item h2 {
 body .section7 {
   display: flex;
 }
+body .section7 .fa-plus {
+  display: none;
+}
 body .section7 .section7__right {
   display: flex;
 }
@@ -1587,7 +1590,7 @@ body .main__navbar-smaller {
   body .section6 .item {
     padding: 56px !important;
     display: flex;
-    gap: 0px;
+    gap: 20px;
   }
   body .section6 .item i {
     font-size: 30px;
@@ -1607,11 +1610,33 @@ body .main__navbar-smaller {
     display: flex;
     flex-direction: column;
   }
+  body .section7 .FotterDropdownBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  body .section7 .FotterDropdownBtn .fa-plus {
+    display: block;
+    font-size: 30px;
+  }
   body .section7 .section7__right {
     display: flex;
+    flex-direction: column;
   }
   body .section7 .section7__right .horizontal__Info {
-    margin: 85px 80px !important;
+    margin: 0px 80px !important;
+  }
+  body .section7 .section7__right .horizontal__Info .displayflex {
+    display: block !important;
+  }
+  body .section7 .section7__right .horizontal__Info .company__dropdown {
+    display: none;
+  }
+  body .section7 .section7__right .horizontal__Info .accond__dropdown {
+    display: none;
+  }
+  body .section7 .section7__right .horizontal__Info .shop__dropdown {
+    display: none;
   }
   body .section7 .section7__right .horizontal__Info h1 {
     font-size: 16px;
@@ -1671,6 +1696,19 @@ body .main__navbar-smaller {
     font-weight: 600;
     color: rgba(134, 142, 150, 0.6823529412);
     text-transform: capitalize;
+  }
+  body .navigarions {
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    padding: 0 !important;
+  }
+  body .navigarions a {
+    padding: 20 !important;
+  }
+  body .navigarions .endItems {
+    display: flex;
+    flex-direction: row;
   }
 }
 @media only screen and (max-width: 768px) {

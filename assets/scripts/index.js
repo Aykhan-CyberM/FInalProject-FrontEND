@@ -45,6 +45,45 @@ const docsArrow2 = document.querySelector('#docsArrow2');
 const menu = document.querySelector('.burgermenu__mainnavbar');
 const menuSectionAbout = document.querySelector('.section1');
 
+
+const accondFoterBtn=document.querySelector('.accondFoterBtn2')
+const accondFoterBtn2=document.querySelector('.accondFoterBtn')
+const accondDropdownFooter =document.querySelector('.accond__dropdown')
+accondFoterBtn.addEventListener('click',()=>{
+    accondDropdownFooter.classList.toggle('displayflex')
+})
+accondFoterBtn2.addEventListener('click',()=>{
+    accondDropdownFooter.classList.toggle('displayflex')
+})
+
+const shopFoterBtn=document.querySelector('#shopFoterBtn')
+const shopFoterBtn2=document.querySelector('#shopFoterBtn2')
+const shopDropdownFooter =document.querySelector('#shopDrop')
+shopFoterBtn.addEventListener('click',()=>{
+    shopDropdownFooter.classList.toggle('displayflex')
+    console.log(shopDropdownFooter.classList.value);
+})
+shopFoterBtn2.addEventListener('click',()=>{
+    shopDropdownFooter.classList.toggle('displayflex')
+    
+})
+
+
+
+
+const companyFoterBtn=document.querySelector('#companyFoterBtn')
+const companyFoterBtn2=document.querySelector('#companyFoterBtn2')
+const copmanyDropdownFooter =document.querySelector('#companyBtn')
+companyFoterBtn.addEventListener('click',()=>{
+    copmanyDropdownFooter.classList.toggle('displayflex')
+    console.log(shopDropdownFooter.classList.value);
+})
+companyFoterBtn2.addEventListener('click',()=>{
+    copmanyDropdownFooter.classList.toggle('displayflex')
+    
+})
+
+
 ////
 homeBtn2.addEventListener('click', () => {
     toggleDropdown3(homeBtn2, homeDropdown2, homeArrow2)
