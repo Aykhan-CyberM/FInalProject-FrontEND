@@ -43,6 +43,7 @@ const docsBtn2 = document.querySelector('#docsBtn2');
 const docsDropdown2 = document.querySelector('.docs__dropdown2');
 const docsArrow2 = document.querySelector('#docsArrow2');
 const menu = document.querySelector('.burgermenu__mainnavbar');
+const menuSectionAbout = document.querySelector('.section1');
 
 ////
 homeBtn2.addEventListener('click', () => {
@@ -66,6 +67,7 @@ pagesBtn2.addEventListener('click', () => {
     toggleDropdown3(pagesBtn2, pagesDropdown2, pagesArrow2)
     makeActive(pagesBtn2, "padding3")
     makeActive(menu,"height2")
+    menuSectionAbout.style.padding = "800px !important"
 })
 docsBtn2.addEventListener('click', () => {
     toggleDropdown3(docsBtn2, docsDropdown2, docsArrow2)

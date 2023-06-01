@@ -284,3 +284,25 @@ body {
     }
 
 }
+@media only screen and (max-width: 900px) {
+
+    body {
+        .padding {
+            padding-bottom: 140px !important;
+            transition: 300ms;
+        }
+
+        .padding2 {
+            padding-bottom: 300px !important;
+            transition: 300ms;
+        }
+        .padding3 {
+            padding-bottom: 700px !important;
+            transition: 300ms;
+        }
+        .padding4 {
+            padding-bottom: 220px !important;
+            transition: 300ms;
+        }
+    }
+}
