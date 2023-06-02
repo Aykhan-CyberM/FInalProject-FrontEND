@@ -270,6 +270,7 @@ function genetateProduct(product) {
       </div>
       <h1 class="section4__about">${product.name}</h1>
       <h2 class="section4__price">${product.price}$</h2>
+     
     </div>`
     const addToCard = document.createElement('button')
     addToCard.className = "addToCardBtn"
@@ -283,6 +284,8 @@ function genetateProduct(product) {
         if (basketItems == null) {
             const newBasketItems = [{ id: product.id, count: 1 }]
             localStorage.setItem('basketItems', JSON.stringify(newBasketItems))
+            const checkOutItem = createChekoutItem({ id: product.id, count: 1 })
+            basketMenu.appendChild(checkOutItem)
             itemTotalCount.innerHTML = 1
             return
         }
@@ -291,10 +294,13 @@ function genetateProduct(product) {
             itemTotalCount.innerHTML = basketItems.length
             basketItems.push({ id: product.id, count: 1 })
             localStorage.setItem('basketItems', JSON.stringify(basketItems))
+            const checkOutItem = createChekoutItem({ id: product.id, count: 1 })
+            basketMenu.appendChild(checkOutItem)
             return
         }
-        itemTotalCount.innerHTML = basketItems.length
+
         foundItem.count++
+        itemTotalCount.innerHTML = basketItems.length
         localStorage.setItem("basketItems", JSON.stringify(basketItems))
 
     })
@@ -316,6 +322,13 @@ function createChekoutItem(BasketItem) {
     </div>
     <h2 class="section4__price">{e}$ - total</h2>
 </div>`
+    const plus = document.createElement('i')
+    plus.classList = 'fa-solid fa-plus'
+    const minus = document.createElement('i')
+    minus.classList = 'fa-solid fa-minus'
+
+    input.appendChild(plus)
+    input.appendChild(minus)
     return input
 }
 
