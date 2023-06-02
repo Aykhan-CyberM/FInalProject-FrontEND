@@ -109,12 +109,12 @@ pagesBtn2.addEventListener('click', () => {
     menuSectionAbout.style.padding = "800px !important"
 })
 docsBtn2.addEventListener('click', () => {
-        toggleDropdown3(docsBtn2, docsDropdown2, docsArrow2)
-        makeActive(docsBtn2, "padding2")
-        makeActive(menu, "height3")
-        menu.classList.remove("height2")
-    })
-    ///
+    toggleDropdown3(docsBtn2, docsDropdown2, docsArrow2)
+    makeActive(docsBtn2, "padding2")
+    makeActive(menu, "height3")
+    menu.classList.remove("height2")
+})
+///
 
 function makeActive(Element, active) {
     Element.classList.toggle(active);
@@ -128,13 +128,12 @@ function makeActive(Element, active) {
 burgermenuBtn.addEventListener('click', () => {
     toggleDropdown2(burgermenuBtn, burgermenu, shopArrow)
 })
-
 function toggleDropdown2(btn, dropdown, arrow) {
     dropdown.classList.toggle('show__burger');
     arrow.classList.toggle('Rotate')
     btn.classList.toggle('colorBlack')
     smallNav.classList.add("bcolorWhite")
-    document.addEventListener('click', function(event) {
+    document.addEventListener('click', function (event) {
         if (!btn.contains(event.target) && !dropdown.contains(event.target)) {
             btn.classList.remove('colorBlack');
             dropdown.classList.remove('show__burger');
@@ -145,17 +144,17 @@ function toggleDropdown2(btn, dropdown, arrow) {
     })
     if (dropdown.classList.contains('show__burger')) {
         smallNav.classList.add("bcolorWhite")
-    } else {
+    }
+    else {
         smallNav.classList.remove("bcolorWhite")
     }
 
 }
-
 function toggleDropdown3(btn, dropdown, arrow) {
     dropdown.classList.toggle('show__burger');
     arrow.classList.toggle('Rotate')
     btn.classList.toggle('colorBlack')
-    document.addEventListener('click', function(event) {
+    document.addEventListener('click', function (event) {
         if (!btn.contains(event.target)) {
             btn.classList.remove('colorBlack');
             dropdown.classList.remove('show__burger');
@@ -181,9 +180,9 @@ engSection.addEventListener('click', () => {
 });
 
 usdSection.addEventListener('click', () => {
-        makeAcrtiveDropdowns(usdArrow, usdSection, currency)
-    })
-    // activeFunction
+    makeAcrtiveDropdowns(usdArrow, usdSection, currency)
+})
+// activeFunction
 homeBtn.addEventListener('click', () => {
     toggleDropdown(homeBtn, homeDropdown, homeArrow)
 })
@@ -200,12 +199,11 @@ pagesBtn.addEventListener('click', () => {
 docsBtn.addEventListener('click', () => {
     toggleDropdown(docsBtn, docsDropdown, docsArrow)
 })
-
 function toggleDropdown(btn, dropdown, arrow) {
     dropdown.classList.toggle('show');
     arrow.classList.toggle('Rotate')
     btn.classList.toggle('colorBlack')
-    document.addEventListener('click', function(event) {
+    document.addEventListener('click', function (event) {
         if (!btn.contains(event.target) && !dropdown.contains(event.target)) {
             btn.classList.remove('colorBlack');
             dropdown.classList.remove('show');
@@ -214,7 +212,6 @@ function toggleDropdown(btn, dropdown, arrow) {
         }
     })
 }
-
 function makeAcrtiveDropdowns(Element, container, show) {
     if (Element.classList.contains("Rotate")) {
         Element.classList.remove("Rotate");
@@ -235,7 +232,7 @@ function makeAcrtiveDropdowns(Element, container, show) {
     })
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
     $('.slider').slick({
         dots: true,
         infinite: true,
@@ -243,7 +240,7 @@ $(document).ready(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 4222000,
         fade: false,
         prevArrow: false,
         nextArrow: false
@@ -258,7 +255,7 @@ const baketShow = document.querySelector('#allP')
 const basketMenu = document.querySelector('.basketMenu')
 const itemTotalCount = document.querySelector('.itemCountTotal')
 const clearBtn = document.querySelector('.ClearBtn')
-const basketItems = JSON.parse(localStorage.getItem('basketItems')) ? ? []
+const basketItems = JSON.parse(localStorage.getItem('basketItems')) ?? []
 itemTotalCount.innerHTML = basketItems.length;
 const ProductsContainer = document.querySelector('.section4')
 
@@ -306,12 +303,11 @@ function genetateProduct(product) {
         }
 
         foundItem.count++
-            itemTotalCount.innerHTML = basketItems.length
+        itemTotalCount.innerHTML = basketItems.length
         localStorage.setItem("basketItems", JSON.stringify(basketItems))
 
     })
 }
-
 function createChekoutItem(product) {
     const item = document.createElement('div');
     const name = document.createElement("span");
@@ -400,7 +396,6 @@ function renderProduct() {
         genetateProduct(x);
     })
 }
-
 function formatNumber(number) {
     const formattedNumber = number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
     return formattedNumber;
@@ -411,3 +406,4 @@ function formatNumber(number) {
 data.forEach((x) => {
     genetateProduct(x);
 })
+
