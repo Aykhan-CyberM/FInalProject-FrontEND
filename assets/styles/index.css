@@ -12,8 +12,6 @@
 }
 
 body {
-  max-width: 100%;
-  overflow-x: hidden;
   /* Optional styling */
 }
 body .top__navbar {
@@ -197,6 +195,10 @@ body .main__navbar .borderBlack {
 @media (min-width: 1100px) {
   body .main__navbar #searchArea {
     margin-right: calc(193px - 10vw) !important;
+  }
+  body .main__navbar .dropdown {
+    color: red !important;
+    display: none;
   }
   body .main__navbar .main__navbar h1 {
     margin-top: 2px !important;
@@ -453,15 +455,23 @@ body .show a:hover {
   color: black !important;
   cursor: pointer;
 }
+body .test {
+  width: 100%;
+  height: 500px;
+  position: relative; /* Added */
+  overflow: hidden; /* Added */
+}
 body #backgroundSlider {
   position: absolute;
   z-index: -2;
+  width: 100%;
   top: 0;
+  height: 500px;
 }
 body .slider {
   width: 100%;
   margin: 0 auto;
-  height: 500px !important;
+  height: 400px !important;
 }
 body .slide-content {
   height: 500px !important;
@@ -801,7 +811,7 @@ body .section5 #section5__background {
 body .section5 .section5__title {
   position: absolute;
   top: 120px;
-  left: 310px;
+  left: 265px;
   color: #303234;
   text-align: center;
 }
@@ -834,7 +844,7 @@ body .section5 .section5__title button:hover {
 body #section5__chair {
   width: 250px;
   height: 430px;
-  left: 900px;
+  left: 850px;
   top: 70px;
   position: relative;
 }
@@ -991,6 +1001,12 @@ body .section1__small {
 }
 
 @media only screen and (max-width: 900px) {
+  body {
+    overflow-x: hidden;
+  }
+  body .main__dropdowns {
+    display: none;
+  }
   body .top__navbar {
     padding: 16px 10px !important;
   }
@@ -1219,7 +1235,6 @@ body .section1__small {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 23px !important;
     color: rgba(0, 0, 0, 0.869);
     font-weight: 700;
   }
@@ -1717,7 +1732,7 @@ body .section1__small {
     flex-direction: row;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .slide-content {
     display: flex;
     justify-content: center;
@@ -1817,6 +1832,11 @@ body .section1__small {
     letter-spacing: 4px;
     font-weight: 600;
     padding: 10px 25px !important;
+  }
+  body .navigarions a {
+    padding: 20 !important;
+    text-align: center;
+    margin: auto !important;
   }
   .section1 {
     display: none;
@@ -2014,6 +2034,7 @@ body .section1__small {
     font-size: 30px;
   }
   .section7 .section7__right {
+    margin-top: 20px !important;
     display: flex;
     flex-direction: column;
   }
@@ -2105,7 +2126,7 @@ body .section1__small {
     flex-direction: row;
   }
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   .slide .slide-content {
     display: flex;
     justify-content: flex-start !important;
