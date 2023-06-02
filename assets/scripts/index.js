@@ -323,12 +323,23 @@ function createChekoutItem(BasketItem) {
     <h2 class="section4__price">{e}$ - total</h2>
 </div>`
     const plus = document.createElement('i')
-    plus.classList = 'fa-solid fa-plus'
+    plus.classList = 'fa-solid fa-plus sdf'
     const minus = document.createElement('i')
-    minus.classList = 'fa-solid fa-minus'
-
+    minus.classList = 'fa-solid fa-minus sdf'
+    const count =document.createElement('span')
+    count.className ="LeftCount"
+    count.innerHTML =basketItems.count
     input.appendChild(plus)
     input.appendChild(minus)
+    input.appendChild(count)
+
+    plus.addEventListener('click',()=>{
+        const basketItems = JSON.parse(localStorage.getItem('basketItems'))
+        const foundItem = basketItems.find(x=>x.id == BasketItem.id)
+        foundItem.count++
+        localStorage.setItem('basketItems' , JSON.stringify(basketItems))
+        count.innerHTML =basketItems.count
+    })
     return input
 }
 
