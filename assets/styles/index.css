@@ -16,13 +16,47 @@ body {
 }
 body .basketMenu {
   width: 400px;
-  height: 100vh;
-  left: -401px;
+  height: 100%;
+  overflow-y: scroll;
   transition: 300ms;
   background-color: white;
   z-index: 3;
   position: fixed;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 330ms;
+  justify-content: center;
+}
+body .basketMenu .section4__product:hover {
+  cursor: pointer;
+}
+body .basketMenu .section4__product {
+  border-bottom: 1px solid black;
+  padding-bottom: 10px !important;
+  justify-content: center;
+  padding-top: 20px !important;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+}
+body .basketMenu .section4__product .section4__img {
+  overflow: hidden;
+  width: 55px;
+  height: 50px;
+}
+body .basketMenu .section4__product .section4__img img {
+  width: 100%;
+  height: 100%;
+}
+body .basketMenu .section4__product .section4__about {
+  font-size: 15px;
+  color: #303234;
+  font-weight: 600;
+  padding: 10px 0px !important;
+}
+body .basketMenu .section4__product .section4__price {
+  font-size: 15px;
+  color: rgba(134, 142, 150, 0.8352941176);
 }
 body .showBasket {
   left: 0 !important;
@@ -483,8 +517,10 @@ body .show a:hover {
 body .test {
   width: 100%;
   height: 500px;
-  position: relative; /* Added */
-  overflow: hidden; /* Added */
+  position: relative;
+  /* Added */
+  overflow: hidden;
+  /* Added */
 }
 body #backgroundSlider {
   position: absolute;

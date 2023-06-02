@@ -253,36 +253,11 @@ $(document).ready(function () {
 ///////////////////////////////////////////////
 const baketShow = document.querySelector('#allP')
 const basketMenu = document.querySelector('.basketMenu')
-const itemTotalCount =document.querySelector('.itemCountTotal')
-const clearBtn =document.querySelector('.ClearBtn')
-itemTotalCount.innerHTML = JSON.parse( localStorage.getItem('basketItems'))?.length ?? 0;
+const itemTotalCount = document.querySelector('.itemCountTotal')
+const clearBtn = document.querySelector('.ClearBtn')
+const basketItems = JSON.parse(localStorage.getItem('basketItems')) ?? []
+itemTotalCount.innerHTML = basketItems.length;
 
-baketShow.addEventListener('click', () => {
-    basketMenu.classList.toggle("showBasket")
-    document.addEventListener('click', (event) => {
-        if (!baketShow.contains(event.target) && !basketMenu.contains(event.target)) {
-            basketMenu.classList.remove("showBasket")
-        }
-    })
-})
-clearBtn.addEventListener('click',()=>{
-    localStorage.removeItem('basketItem')
-    itemTotalCount.innerHTML = 0
-})
-
-
-function renderProduct() {
-    _acitveProduct.forEach((x) => {
-        genetateProduct(x);
-    })
-}
-function formatNumber(number) {
-    const formattedNumber = number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
-    return formattedNumber;
-}
-
-
-const ProductsContainer = document.querySelector('.section4')
 
 function genetateProduct(product) {
 
@@ -308,7 +283,7 @@ function genetateProduct(product) {
         if (basketItems == null) {
             const newBasketItems = [{ id: product.id, count: 1 }]
             localStorage.setItem('basketItems', JSON.stringify(newBasketItems))
-            itemTotalCount.innerHTML = basketItems.length
+            itemTotalCount.innerHTML = 1
             return
         }
         const foundItem = basketItems.find(x => x.id == product.id)
@@ -320,10 +295,66 @@ function genetateProduct(product) {
         }
         itemTotalCount.innerHTML = basketItems.length
         foundItem.count++
-        localStorage.setItem("basketItems",JSON.stringify(basketItems))
+        localStorage.setItem("basketItems", JSON.stringify(basketItems))
 
     })
 }
+function createChekoutItem(BasketItem) {
+    
+
+    const input = document.createElement('div')
+    input.innerHTML = `<div class="items">
+<div class="section4__product" data-aos="zoom-in">
+    <div class="section4__img">
+        <img src="./assets/images/${BasketItem.img}" alt="">
+    </div>
+    <div>
+        <h1 class="section4__about">${BasketItem.name}</h1>
+        <h2 class="section4__price">${BasketItem.price}$</h2>
+    </div>
+    
+    </div>
+    <h2 class="section4__price">{e}$ - total</h2>
+</div>`
+    return input
+}
+
+
+
+basketItems.forEach(b => {
+    const checkOutItem = createChekoutItem(b)
+    basketMenu.appendChild(checkOutItem)
+})
+
+
+
+baketShow.addEventListener('click', () => {
+    basketMenu.classList.toggle("showBasket")
+    document.addEventListener('click', (event) => {
+        if (!baketShow.contains(event.target) && !basketMenu.contains(event.target)) {
+            basketMenu.classList.remove("showBasket")
+        }
+    })
+})
+clearBtn.addEventListener('click', () => {
+    localStorage.removeItem('basketItems')
+    itemTotalCount.innerHTML = 0
+})
+
+
+function renderProduct() {
+    _acitveProduct.forEach((x) => {
+        genetateProduct(x);
+    })
+}
+function formatNumber(number) {
+    const formattedNumber = number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    return formattedNumber;
+}
+
+
+
+const ProductsContainer = document.querySelector('.section4')
 data.forEach((x) => {
     genetateProduct(x);
 })
