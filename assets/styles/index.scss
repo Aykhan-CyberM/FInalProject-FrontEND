@@ -12,9 +12,33 @@
     transition: 300ms !important;
 }
 
-body {
-  
-
+body {//head1
+    .basketMenu{
+        width: 400px;
+        height: 100vh;
+        left: -401px;
+        transition: 300ms;
+        background-color: white;
+        z-index: 3;
+        position: fixed;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+    .showBasket{
+        left: 0 !important;
+        
+    }
+    .addToCardBtn{
+        margin-top: 48px !important;
+        border: 1px solid #bcac76;
+        background-color: transparent;
+        color: #bcac76;
+        font-size: 13px;
+        text-transform: uppercase;
+        word-spacing: 3px;
+        letter-spacing: 4px;
+        font-weight: 600;
+        padding: 10px 15px !important;
+    }
     .top__navbar {
         font-size: 15px;
         background-color: #e9ecef;
@@ -1024,7 +1048,7 @@ body {
         #firstoneP {
             color: black !important;
         }
-
+        
         #allP {
             color: #bcac76;
             text-transform: uppercase;
@@ -1033,6 +1057,8 @@ body {
             letter-spacing: 3px;
             font-weight: 600;
             font-size: 13px;
+            cursor: pointer;
+            user-select: none;
         }
 
         #allP:hover {

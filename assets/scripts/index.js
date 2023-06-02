@@ -251,6 +251,26 @@ $(document).ready(function () {
 
 
 ///////////////////////////////////////////////
+const baketShow = document.querySelector('#allP')
+const basketMenu = document.querySelector('.basketMenu')
+const itemTotalCount =document.querySelector('.itemCountTotal')
+const clearBtn =document.querySelector('.ClearBtn')
+itemTotalCount.innerHTML = JSON.parse( localStorage.getItem('basketItems'))?.length ?? 0;
+
+baketShow.addEventListener('click', () => {
+    basketMenu.classList.toggle("showBasket")
+    document.addEventListener('click', (event) => {
+        if (!baketShow.contains(event.target) && !basketMenu.contains(event.target)) {
+            basketMenu.classList.remove("showBasket")
+        }
+    })
+})
+clearBtn.addEventListener('click',()=>{
+    localStorage.removeItem('basketItem')
+    itemTotalCount.innerHTML = 0
+})
+
+
 function renderProduct() {
     _acitveProduct.forEach((x) => {
         genetateProduct(x);
@@ -276,7 +296,33 @@ function genetateProduct(product) {
       <h1 class="section4__about">${product.name}</h1>
       <h2 class="section4__price">${product.price}$</h2>
     </div>`
+    const addToCard = document.createElement('button')
+    addToCard.className = "addToCardBtn"
     ProductsContainer.appendChild(products)
+    addToCard.innerHTML = 'Add to card'
+    products.appendChild(addToCard)
+
+
+    addToCard.addEventListener('click', () => {
+        let basketItems = JSON.parse(localStorage.getItem('basketItems'))
+        if (basketItems == null) {
+            const newBasketItems = [{ id: product.id, count: 1 }]
+            localStorage.setItem('basketItems', JSON.stringify(newBasketItems))
+            itemTotalCount.innerHTML = basketItems.length
+            return
+        }
+        const foundItem = basketItems.find(x => x.id == product.id)
+        if (foundItem == null) {
+            itemTotalCount.innerHTML = basketItems.length
+            basketItems.push({ id: product.id, count: 1 })
+            localStorage.setItem('basketItems', JSON.stringify(basketItems))
+            return
+        }
+        itemTotalCount.innerHTML = basketItems.length
+        foundItem.count++
+        localStorage.setItem("basketItems",JSON.stringify(basketItems))
+
+    })
 }
 data.forEach((x) => {
     genetateProduct(x);

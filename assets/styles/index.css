@@ -14,6 +14,31 @@
 body {
   /* Optional styling */
 }
+body .basketMenu {
+  width: 400px;
+  height: 100vh;
+  left: -401px;
+  transition: 300ms;
+  background-color: white;
+  z-index: 3;
+  position: fixed;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+body .showBasket {
+  left: 0 !important;
+}
+body .addToCardBtn {
+  margin-top: 48px !important;
+  border: 1px solid #bcac76;
+  background-color: transparent;
+  color: #bcac76;
+  font-size: 13px;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  letter-spacing: 4px;
+  font-weight: 600;
+  padding: 10px 15px !important;
+}
 body .top__navbar {
   font-size: 15px;
   background-color: #e9ecef;
@@ -864,6 +889,10 @@ body .navigarions #allP {
   letter-spacing: 3px;
   font-weight: 600;
   font-size: 13px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 body .navigarions #allP:hover {
   text-decoration: underline;
