@@ -1,4 +1,5 @@
 body {
+    overflow-x: hidden;
     .section1 {
         width: 100%;
         height: 620px;
@@ -15,14 +16,17 @@ body {
         margin-top: 120px !important;
         z-index: 2;
         text-align: center;
-        a{
+
+        a {
             text-decoration: none;
             color: #bcac76;
 
         }
-        a:hover{
+
+        a:hover {
             text-decoration: underline;
         }
+
         span {
             color: #868e96 !important;
         }
@@ -39,41 +43,51 @@ body {
             padding: 20px 40px !important;
         }
     }
-    .main{
-        display: flex ;
+
+    .main {
+        display: flex;
         margin-top: 200px !important;
-       justify-content:  center;
-        .grid__container{
-            display: grid ;
+        justify-content: center;
+
+        .grid__container {
+            display: grid;
             grid-template-columns: auto auto auto;
             gap: 100px;
-            div{
+
+            div {
                 width: 300px;
                 height: max-content;
-                img{
+
+                img {
                     width: 100%;
                 }
-                h1{
+
+                h1 {
                     font-size: 20px;
                     font-weight: 700;
                     margin: 15px 0 !important;
                 }
-                h1:hover{
+
+                h1:hover {
                     text-decoration: underline;
                     color: black;
                     cursor: pointer;
                 }
-                a{
+
+                a {
                     text-decoration: none;
                     color: #bcac76;
                 }
-                a:hover{
+
+                a:hover {
                     text-decoration: underline;
                 }
-                a:visited{
-                    color:#bcac76 
+
+                a:visited {
+                    color: #bcac76
                 }
-                span{
+
+                span {
                     color: #868e96;
                     font-weight: 600;
                     font-size: 15px;
@@ -82,16 +96,18 @@ body {
             }
         }
     }
-    .navigation__blog{
+
+    .navigation__blog {
         display: flex;
         justify-content: space-between;
         padding: 60px !important;
         color: #868e96;
+
         .hover-black:hover {
             color: black;
             cursor: pointer;
         }
-        
+
         .hover-black:hover i {
             color: black !important;
         }
@@ -101,9 +117,55 @@ body {
 
 @media only screen and (max-width: 900px) {
     body {
-      #homeLink {
-        z-index: 10 !important;
-        position: relative;
-      }
+        #homeLink {
+            z-index: 10 !important;
+            position: relative;
+        }
     }
-  }
+}
+
+@media only screen and (max-width: 767px) {
+    body .navigation__blog {
+        padding: 20px !important;
+        
+    }
+    body .main .grid__container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 0px;
+    }
+    body .main .grid__container div img {
+        width: 220%;
+    }
+    body .main .grid__container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 0px;
+        width: 660px;
+    }
+    body .section6 {
+        margin-top: 8px !important;
+    }
+    
+}
+@media only screen and (max-width: 600px) {
+    body .navigation__blog {
+        padding: 20px !important;
+        
+    }
+    body .main .grid__container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 0px;
+    }
+    body .main .grid__container div img {
+        width: 150% !important;
+    }
+    body .main .grid__container {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 0px;
+        width: 440px !important;
+    }
+    
+}

@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden;
+}
 body .section1 {
   width: 100%;
   height: 620px;
@@ -95,5 +98,46 @@ body .navigation__blog .hover-black:hover i {
   body #homeLink {
     z-index: 10 !important;
     position: relative;
+  }
+}
+@media only screen and (max-width: 767px) {
+  body .navigation__blog {
+    padding: 20px !important;
+  }
+  body .main .grid__container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0px;
+  }
+  body .main .grid__container div img {
+    width: 220%;
+  }
+  body .main .grid__container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0px;
+    width: 660px;
+  }
+  body .section6 {
+    margin-top: 8px !important;
+  }
+}
+@media only screen and (max-width: 600px) {
+  body .navigation__blog {
+    padding: 20px !important;
+  }
+  body .main .grid__container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0px;
+  }
+  body .main .grid__container div img {
+    width: 150% !important;
+  }
+  body .main .grid__container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 0px;
+    width: 440px !important;
   }
 }/*# sourceMappingURL=blog.css.map */
