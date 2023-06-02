@@ -1000,7 +1000,47 @@ body .section1__small {
   display: none;
 }
 
+@media only screen and (max-width: 767px) {
+  .slide .slide-content .left h1 {
+    width: -moz-max-content;
+    width: max-content;
+    width: 300px !important;
+  }
+}
 @media only screen and (max-width: 900px) {
+  body .height3 {
+    height: 900px !important;
+  }
+  body .otherProcess {
+    display: none !important;
+  }
+  body .padding2 {
+    padding-bottom: 400px !important;
+  }
+  body .padding4 {
+    padding-bottom: 600px !important;
+  }
+  body .height {
+    height: 600px !important;
+  }
+  body .height2 {
+    height: 1000px !important;
+  }
+  body .padding3 {
+    padding-bottom: 1600px !important;
+  }
+  body .slide-content .left h2 {
+    width: 246px;
+  }
+  .slide .slide-content .left h1 {
+    width: 400px;
+  }
+  body .navigarions a {
+    margin: auto !important;
+  }
+  body .navigarions {
+    align-items: center !important;
+  }
   body {
     overflow-x: hidden;
   }
@@ -2185,6 +2225,15 @@ body .section1__small {
     font-weight: 600;
     padding: 10px 25px !important;
   }
+  body .main__dropdownsSmaller .icons__dropdown2 .icons__gridClass {
+    display: grid;
+    grid-template-columns: auto auto;
+    -moz-column-gap: 100px;
+         column-gap: 100px;
+  }
+  .dropdown {
+    flex-direction: column;
+  }
   .section1 {
     display: none;
   }
@@ -2249,7 +2298,7 @@ body .section1__small {
   }
   .section1__small .products__gridcontaier #chair img {
     z-index: -1;
-    width: 340px;
+    width: 280px;
     height: 400px;
   }
   .section1__small .products__gridcontaier #clock {
@@ -2257,7 +2306,7 @@ body .section1__small {
   }
   .section1__small .products__gridcontaier #clock img {
     z-index: -1;
-    width: 300px;
+    width: 260px;
     height: 280px;
     margin-left: 20px !important;
   }
@@ -2266,17 +2315,17 @@ body .section1__small {
     top: 90px;
   }
   .section1__small .products__gridcontaier #box img {
-    width: 400px;
+    width: 370px;
   }
   .section1__small .products__gridcontaier #clock2 img {
-    width: 400px;
+    width: 300px;
   }
   .section1__small .products__gridcontaier #chair3 {
     display: flex;
   }
   .section1__small .products__gridcontaier #chair3 img {
     z-index: -1;
-    width: 309px;
+    width: 259px;
     height: 339px;
   }
   .section1__small .products__gridcontaier #chair3 .aboutText {
