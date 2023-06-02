@@ -46,41 +46,41 @@ const menu = document.querySelector('.burgermenu__mainnavbar');
 const menuSectionAbout = document.querySelector('.section1');
 
 
-const accondFoterBtn=document.querySelector('.accondFoterBtn2')
-const accondFoterBtn2=document.querySelector('.accondFoterBtn')
-const accondDropdownFooter =document.querySelector('.accond__dropdown')
-accondFoterBtn.addEventListener('click',()=>{
+const accondFoterBtn = document.querySelector('.accondFoterBtn2')
+const accondFoterBtn2 = document.querySelector('.accondFoterBtn')
+const accondDropdownFooter = document.querySelector('.accond__dropdown')
+accondFoterBtn.addEventListener('click', () => {
     accondDropdownFooter.classList.toggle('displayflex')
 })
-accondFoterBtn2.addEventListener('click',()=>{
+accondFoterBtn2.addEventListener('click', () => {
     accondDropdownFooter.classList.toggle('displayflex')
 })
 
-const shopFoterBtn=document.querySelector('#shopFoterBtn')
-const shopFoterBtn2=document.querySelector('#shopFoterBtn2')
-const shopDropdownFooter =document.querySelector('#shopDrop')
-shopFoterBtn.addEventListener('click',()=>{
+const shopFoterBtn = document.querySelector('#shopFoterBtn')
+const shopFoterBtn2 = document.querySelector('#shopFoterBtn2')
+const shopDropdownFooter = document.querySelector('#shopDrop')
+shopFoterBtn.addEventListener('click', () => {
     shopDropdownFooter.classList.toggle('displayflex')
     console.log(shopDropdownFooter.classList.value);
 })
-shopFoterBtn2.addEventListener('click',()=>{
+shopFoterBtn2.addEventListener('click', () => {
     shopDropdownFooter.classList.toggle('displayflex')
-    
+
 })
 
 
 
 
-const companyFoterBtn=document.querySelector('#companyFoterBtn')
-const companyFoterBtn2=document.querySelector('#companyFoterBtn2')
-const copmanyDropdownFooter =document.querySelector('#companyBtn')
-companyFoterBtn.addEventListener('click',()=>{
+const companyFoterBtn = document.querySelector('#companyFoterBtn')
+const companyFoterBtn2 = document.querySelector('#companyFoterBtn2')
+const copmanyDropdownFooter = document.querySelector('#companyBtn')
+companyFoterBtn.addEventListener('click', () => {
     copmanyDropdownFooter.classList.toggle('displayflex')
     console.log(shopDropdownFooter.classList.value);
 })
-companyFoterBtn2.addEventListener('click',()=>{
+companyFoterBtn2.addEventListener('click', () => {
     copmanyDropdownFooter.classList.toggle('displayflex')
-    
+
 })
 
 
@@ -93,25 +93,25 @@ homeBtn2.addEventListener('click', () => {
 shopBtn2.addEventListener('click', () => {
     toggleDropdown3(shopBtn2, shopDropdown2, shopArrow2)
     makeActive(shopBtn2, "padding2")
-    makeActive(menu,"height")
+    makeActive(menu, "height")
 })
 
 iconsBtn2.addEventListener('click', () => {
     toggleDropdown3(iconsBtn2, iconsDropdown2, iconsArrow2)
     makeActive(iconsBtn2, "padding4")
-    makeActive(menu,"height")
+    makeActive(menu, "height")
 })
 
 pagesBtn2.addEventListener('click', () => {
     toggleDropdown3(pagesBtn2, pagesDropdown2, pagesArrow2)
     makeActive(pagesBtn2, "padding3")
-    makeActive(menu,"height2")
+    makeActive(menu, "height2")
     menuSectionAbout.style.padding = "800px !important"
 })
 docsBtn2.addEventListener('click', () => {
     toggleDropdown3(docsBtn2, docsDropdown2, docsArrow2)
     makeActive(docsBtn2, "padding2")
-    makeActive(menu,"height3")
+    makeActive(menu, "height3")
     menu.classList.remove("height2")
 })
 ///
@@ -247,4 +247,38 @@ $(document).ready(function () {
     });
 });
 
+
+
+
+///////////////////////////////////////////////
+function renderProduct() {
+    _acitveProduct.forEach((x) => {
+        genetateProduct(x);
+    })
+}
+function formatNumber(number) {
+    const formattedNumber = number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+    return formattedNumber;
+}
+
+
+const ProductsContainer = document.querySelector('.section4')
+
+function genetateProduct(product) {
+
+    const products = document.createElement("div")
+    const formattedNumber = formatNumber(product.price);
+    products.innerHTML = `
+    <div class="section4__product" data-aos="zoom-in">
+      <div class="section4__img">
+          <img src="./assets/images/${product.img}" alt="">
+      </div>
+      <h1 class="section4__about">${product.name}</h1>
+      <h2 class="section4__price">${product.price}$</h2>
+    </div>`
+    ProductsContainer.appendChild(products)
+}
+data.forEach((x) => {
+    genetateProduct(x);
+})
 
