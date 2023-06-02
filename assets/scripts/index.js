@@ -274,6 +274,7 @@ function genetateProduct(product) {
       <h2 class="section4__price">${product.price}$</h2>
      
     </div>`
+
     const addToCard = document.createElement('button')
     addToCard.className = "addToCardBtn"
     ProductsContainer.appendChild(products)
@@ -309,6 +310,14 @@ function genetateProduct(product) {
 }
 function createChekoutItem(product) {
     const item = document.createElement('div');
+    const name = document.createElement("span");
+    let basketItems = JSON.parse(localStorage.getItem('basketItems'));
+
+    if (basketItems != null) {
+        const foundItem = basketItems.find(x => x.id === product.id);
+        name.innerText = foundItem.name; // Get the name property from foundItem
+    }
+
     item.innerHTML = `
         <div class="items">
             <div class="section4__product" data-aos="zoom-in">
@@ -316,7 +325,7 @@ function createChekoutItem(product) {
                     <img src="./assets/images/${product.img}" alt="${product.name}">
                 </div>
                 <div>
-                    <h1 class="section4__about">${product.name}</h1>
+                    <h1 class="section4__about">${name.innerText}</h1> <!-- Use name.innerText instead of name.innerHTML -->
                     <h2 class="section4__price">${product.price}$</h2>
                 </div>
             </div>
@@ -357,6 +366,7 @@ function createChekoutItem(product) {
 
     return item;
 }
+
 
 
 
