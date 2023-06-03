@@ -11,6 +11,7 @@ body .section1 {
   position: absolute;
   top: 0;
   z-index: -1;
+  overflow-x: visible;
 }
 body #section1__text {
   margin-top: 120px !important;

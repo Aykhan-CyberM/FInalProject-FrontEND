@@ -98,8 +98,8 @@ shopBtn2.addEventListener('click', () => {
 
 iconsBtn2.addEventListener('click', () => {
     toggleDropdown3(iconsBtn2, iconsDropdown2, iconsArrow2)
-    makeActive(iconsBtn2, "padding4")
-    makeActive(menu, "height")
+    makeActive(iconsBtn2, "padding3")
+    makeActive(menu, "height2")
 })
 
 pagesBtn2.addEventListener('click', () => {
